@@ -1,5 +1,5 @@
 class Money():
-    def __init__(self, cp, sp, ep, gp, pp):
+    def __init__(self, cp=0, sp=0, ep=0, gp=31, pp=0):
         self.cp = cp
         self.sp = sp
         self.ep = ep
@@ -19,9 +19,11 @@ class Money():
     def __len__(self):
         return self.cp/100+self.sp/10+self.ep/2+self.gp+self.pp*10
 
-    def update_money(value, coin='gp'):
-        exec(f'self.{coin} = self.{coin}+value')
+    def update_money(self, value, coin='gp'):
+        exec(f'self.{coin} = self.{coin}+{value}')
 
+char_gold_start_value = Money(0,0,0,200,0)
+npc_gold_start_value = Money(20,50,0,5,0)
 
 transformation_matrix = {
     'cp': [1    , 1/10, 1/50 , 1/100 , 1/1000],
@@ -38,7 +40,6 @@ coin_index = {
     'gp': 3,
     'pp': 4
 }
-
 
 def exchange_coin(value, coin_from='sp', coin_to='gp'):
     return transformation_matrix[coin_from][coin_index[coin_to]]*value

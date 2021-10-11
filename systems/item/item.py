@@ -1,21 +1,28 @@
 class Item():
-    def __init__(self, name, unique = False):
+    def __init__(self, name, unique=True, info='', owner=None, unique = False):
         self.name = name
-        self.place = place
-        self.npcs = npcs
-        self.chars = chars
+        self.owner = owner
         self.info = info
+        self.status = dict()
+        self.unique = unique
+
 
     def __repr__(self):
         ret = f"""
-        date: {self.name}
-        where: {self.place}
-        npcs: {self.npcs}
-        chars: {self.chars}
+        {self.name}
+        {self.status}
+        Info
         {self.info}
         """
         return ret
 
+
+class SpecialItem(Item):
+    def add_special_hability(self, name, effect):
+        self.special_habilities = self.special_habilities+{name:effect}
+
+    def add_hidden_hability(self, name, effect):
+        self.hidden_habilities = self.hidden_habilities+{name:effect}
 
 magical_item = {
     

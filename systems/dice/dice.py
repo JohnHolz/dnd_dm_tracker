@@ -20,6 +20,7 @@ def rand_dice(dice = 'd6'):
     return eval_string
 
 def roll(ŕoll='2d6+4'):
+    ## !TODO fazer recursivo
     ## ! roll dice function and return the value
     ## ! just work with +, - not implemented
     return sum(list(map( lambda y: eval(rand_dice(y)), ŕoll.split('+'))))

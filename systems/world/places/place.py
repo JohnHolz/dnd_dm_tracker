@@ -1,3 +1,5 @@
+from monetary_system import Money
+
 class Place():
     def __init__(self, name, type, lore=''):
         self.name = name
@@ -14,7 +16,6 @@ class Place():
         {self.info}
         """
         return ret
-
 
 
 religius_place = {

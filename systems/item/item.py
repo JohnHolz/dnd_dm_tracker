@@ -16,4 +16,7 @@ class Item():
         """
         return ret
 
+
+magical_item = {
     
+}

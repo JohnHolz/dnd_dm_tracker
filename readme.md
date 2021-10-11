@@ -5,17 +5,15 @@ As a GM i need to keep track of a lot of ideas, encounters, events, rounds, part
 Maybe someday i will do a website but the focus is to create some notebooks and a database to keep track of my dnd tables.
 
 ## What to track:
-1. Events
-2. Encounters
-3. Party
-4. Npcs
-5. Important Itens
 
-## Classes:
-1. Encounter
-   1. name
-   2. location
-   3. monsters
-   4. npcs
-   5. rewards
-2. 
+1. Our characters
+   1. npc
+   2. chars
+2. future encounters:
+3. game:
+   - save past events
+4. itens
+5. Itens
+6. World
+   1. locations
+   2. coin system

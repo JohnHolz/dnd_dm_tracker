@@ -1,4 +1,6 @@
 {
+    "python.pythonPath": "/home/joaoholz/miniconda3/envs/dnd/bin/python",
+    "python.condaPath": "/home/joaoholz/miniconda3/bin/conda",
     "better-comments.tags": [
 
         {

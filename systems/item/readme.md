@@ -24,6 +24,9 @@ Itens information:
 8.  If they are unique? How many they are?
 
 
+# Class Item
+ 
+
 ## Unique Itens
 ### Unique Shield example:
 

@@ -11,8 +11,6 @@ class Item():
         ret = f"""
         {self.name}
         {self.status}
-        Info
-        {self.info}
         """
         return ret
 

@@ -4,7 +4,7 @@ class Encounter():
     def __init__(self, first_idea):
         self.first_idea = first_idea
         self.name = ''
-        self.locaton = []
+        self.locaton_type = []
         self.monsters = {'order1':[],'boss':[]}
         self.npcs = {}
         self.plot = ''

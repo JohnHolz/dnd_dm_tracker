@@ -9,7 +9,7 @@ Some of mine dm systems:
 
 # Role Play AC:
 
- AC             |AC value                           |block type
+AC              |AC value                           |block type
  ---            |---                                |---
 natural deffense| 0 < atak < 10                     | miss
 armor           | 10 < atak < 10+armor              | armor protection

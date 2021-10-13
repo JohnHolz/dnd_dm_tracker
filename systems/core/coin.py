@@ -17,13 +17,21 @@ class Money():
         return ret
 
     def __add__(self, other):
-        ret = [self.cp + other.cp,
+        ret = Money(self.cp + other.cp,
                self.sp + other.sp,
                self.ep + other.ep,
                self.gp + other.gp,
-               self.pp + other.pp]
+               self.pp + other.pp)
         return ret
-                 
+
+    def __sub__(self, other):
+        ret = Money(self.cp - other.cp,
+               self.sp - other.sp,
+               self.ep - other.ep,
+               self.gp - other.gp,
+               self.pp - other.pp)
+        return ret
+    
     def __len__(self):
         return self.cp/100+self.sp/10+self.ep/2+self.gp+self.pp*10
 

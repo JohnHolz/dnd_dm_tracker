@@ -80,3 +80,4 @@ Kelemvor                |N              |Dead       | Outro Plano e alguns cemit
 Shar                    |E              |Death      | Outro Plano                                
 Ogmhar                  |N              |Knowledge  | Escolas de magia
 Auril                   |N              |Ice        | Escolas de magia
+Paimon                  |LE             |Demons     | Outro plano, Cultos

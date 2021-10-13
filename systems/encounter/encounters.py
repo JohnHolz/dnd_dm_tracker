@@ -1,4 +1,4 @@
-from monetary_system import Money
+from ..core.coin import Money
 
 class Encounter():
     def __init__(self, first_idea):

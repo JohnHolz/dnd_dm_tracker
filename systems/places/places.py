@@ -1,67 +1,95 @@
-class Urban():
-    def __init__(self, name, type, lore=''):
+line = '\n+-------------------+\n'
+
+
+class Room():
+    def __init__(self, name, where, description=''):
         self.name = name
-        self.type = type
-        self.lore = lore
-        self.type_info = place_types[type]
+        self.where = where
+        self.description = description
+
+        self.other = {}
+        self.mobs = {}
+        self.hidden = {}  # hidden info
+
+        self.itens = []
 
     def __repr__(self):
         ret = f"""
-        date: {self.time}
-        where: {self.location}
-        npcs: {self.npcs}
-        chars: {self.chars}
-        {self.info}
+        {self.name}
+            where:       {self.where}
+            description: {self.description}
         """
         return ret
+
+    # first updatable
+    def add_description(self, string: str):
+        self.description = f"""{self.description}
+        {string}"""
+
+    # add to dictionaries
+    def add_mob(self, mob_name, mob_count=1):
+        self.mobs[mob_name] = mob_count
+
+    def add_info(self, key, value):
+        self.other[key] = value
+
+    def add_hidden(self, what_is_hidden, description):
+        self.hidden[what_is_hidden] = description
+
+    def add_itens(self, new_itens):
+        if type(new_itens) == str:
+            new_itens = [new_itens]
+        self.itens = self.itens + new_itens
+
 
 class Place():
-    def __init__(self, name, type, lore=''):
+    def __init__(self, name, where, what, lore=''):
         self.name = name
-        self.type = type
-        self.lore = lore
-        self.type_info = place_types[type]
+        self.where = where
+        self.what = what
+        self.npcs = {
+            'core_npcs': [],
+            'npcs': [],
+            'other_npcs': []
+        }
+        self.rooms = {}
+        self.events = {}
+        self.other = {}
+        self.description = {
+            'lore': lore,
+            'description': ''}
 
     def __repr__(self):
         ret = f"""
-        date: {self.time}
-        where: {self.location}
-        npcs: {self.npcs}
-        chars: {self.chars}
-        {self.info}
+        {self.name}
+            where:   {self.where}
+            what:    {self.what}
         """
         return ret
 
-religius_place = {
-    'deiti': '',
-    'itens': '',
-}
+    # add npcs
+    def add_npc(self, new_npc, npc_type='npcs'):
+        if type(npc) == str:
+            new_npc = [new_npc]
+        self.npcs[npc_type] = self.npcs[npc_type]+new_npc
 
-military_place = {
-    'itens': '',
-}
+    # add room
+    def add_room(self, room):
+        self.rooms[room.name] = room
+    # add event
 
-urban_place = {'Social': '',
-               'Political': '',
-               'Economical': '',
-               'Religious': '',
-               'Military': '',
-               'Magical': '', }
+    def add_event(self, event):
+        self.events[event.name] = event
+    # add random info
 
-campaing_place = {
-    'npcs':[],
-}
+    def add_info(self, key, value):
+        self.other[key] = value
 
-place_types = {
-        ## @ urban/human places
-         'city': urban_place.copy(),
-         'village': urban_place.copy(),
-        ## @ random campaing place
-         'farm-village':'',
-         'temple': religius_place.copy(),
-         'fort': military_place.copy(),
-         'monument': military_place.copy(),
-        ## @ random places        
-         'dungeon':'',
-         'cave':'',
-}
+    # add description
+    def add_lore(self, string: str):
+        self.description['lore'] = self.description['lore'] + \
+            line+f"""\n {string}"""
+
+    def add_description(self, string: str):
+        self.description['description'] = self.description['description'] + \
+            line+f"""\n {string}"""

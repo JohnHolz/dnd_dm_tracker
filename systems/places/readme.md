@@ -28,15 +28,49 @@
          6. florest
          7. swamp
          8. monuments
-      2. cities intern places
+      2. urban intern places
          1. stores
          2. taverns
          3. temples
          4. squares
-         5. farm_hourses
+         5. farm
    2. rooms
    3. description
    4. itens inside
    5. lore
 
 ## Characteristics of places:
+
+      ---
+      Selgaunt
+         The sea white fortress
+         city
+         places:
+            port
+            central square
+            castle
+      ---
+
+      hideen info
+         1. basic city info:
+            1. social
+            2. political
+            3. economy
+            4. religious
+            5. military
+            6. magical
+         2. lore
+         3. important npcs
+
+
+      ---
+      Minas Mirabar
+         The suspended minas on the grey Hill
+         city
+         places:
+            port
+            central square
+            castle
+      ---
+
+

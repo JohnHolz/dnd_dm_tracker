@@ -24,18 +24,18 @@ Maybe someday i will do a website but the focus is to create some notebooks and 
       4. npcs
 
 ## Systems to be implemented
-1. Small Core Systems
+1. Core Mechenics
    1. dice system - ok
    2. coin system - ok
    3. hability    - ok
    4. status      - ok
 2. Core
    1. char
-      1. npcs     
-      2. chars
-   2. encounter
-   3. events
-   4. places
+      1. npcs - mess
+      2. chars - not started
+   2. encounter - almost
+   3. events - almost
+   4. places - ok
    5. world
-      1. calendar
-      2. hour_system
+      1. Calendar - ok
+      2. Datetime - ok

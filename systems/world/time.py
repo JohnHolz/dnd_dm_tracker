@@ -74,8 +74,8 @@ class DateTime():
             day = hour % 400
         return DateTime(day, hour, minute, year)
     
-    def foward(self, value, update):            
+    def foward(self, value, update):
         if update=='day':
-            self.__add__(DateTime(value, 0))
+            return self + DateTime(value, 0)
         if update=='hour':
-            self.__add__(DateTime(0, value))
+            return self + DateTime(0,value)

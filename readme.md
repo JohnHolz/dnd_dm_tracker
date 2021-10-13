@@ -34,7 +34,7 @@ Maybe someday i will do a website but the focus is to create some notebooks and 
       1. npcs - mess
       2. chars - not started
    2. encounter - almost
-   3. events - almost
+   3. events - ok
    4. places - ok
    5. world
       1. Calendar - ok

@@ -33,11 +33,9 @@ class Urban():
         }
 
     def __repr__(self):
-        ret = f"""
-        {self.name}
+        ret = f"""{self.name}
             {self.subtitle}
-            {self.urban_type}
-        """
+            {self.urban_type}"""
         return ret
 
     # update description and spermm

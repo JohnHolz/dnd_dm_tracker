@@ -14,11 +14,9 @@ class Room():
         self.itens = []
 
     def __repr__(self):
-        ret = f"""
-        {self.name}
+        ret = f"""{self.name}
             where:       {self.where}
-            description: {self.description}
-        """
+            description: {self.description}"""
         return ret
 
     # first updatable
@@ -60,16 +58,14 @@ class Place():
             'description': ''}
 
     def __repr__(self):
-        ret = f"""
-        {self.name}
+        ret = f"""{self.name}
             where:   {self.where}
-            what:    {self.what}
-        """
+            what:    {self.what}"""
         return ret
 
     # add npcs
     def add_npc(self, new_npc, npc_type='npcs'):
-        if type(npc) == str:
+        if type(new_npc) == str:
             new_npc = [new_npc]
         self.npcs[npc_type] = self.npcs[npc_type]+new_npc
 

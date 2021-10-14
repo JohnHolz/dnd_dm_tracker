@@ -38,9 +38,6 @@ class Money():
     def update_money(self, value, coin='gp'):
         exec(f'self.{coin} = self.{coin}+{value}')
 
-char_gold_start_value = Money(0,0,0,200,0)
-npc_gold_start_value = Money(20,50,0,5,0)
-
 transformation_matrix = {
     'cp': [1    , 1/10, 1/50 , 1/100 , 1/1000],
     'sp': [10   , 1   , 1/5  ,  1/10 ,  1/100],

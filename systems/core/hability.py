@@ -1,3 +1,4 @@
+line = '\n+---------------------------------------------------+\n'
 class Hability():
     def __init__(self, name, hability_cost, effect, value = '',description=''):
         self.name = name
@@ -7,11 +8,9 @@ class Hability():
         self.description = description
 
     def __repr__(self) -> str:
-        ret = f"""
-        {self.name}
-            cost:           {self.cost}
-            effect:         {self.effect}
-            roll:           {self.roll}
-            description:    {self.description}
-        """
+        ret = f"""{line}{self.name}
+        cost:           {self.cost}
+        effect:         {self.effect}
+        roll:           {self.roll}
+        description:    {self.description}{line}"""
         return ret

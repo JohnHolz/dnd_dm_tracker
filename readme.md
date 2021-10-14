@@ -14,11 +14,9 @@ Maybe someday i will do a website but the focus is to create some notebooks and 
 
 # Systems Tree
 
-1. itens
+1. itens - ok
    1. hability
-   2. events
-   3. dice
-   4. value
+   2. value
 2. Chars
    1. npcs
       1. status
@@ -38,11 +36,11 @@ Maybe someday i will do a website but the focus is to create some notebooks and 
    4. mobs_group
       1. mobs
       2. boss
-2. places
-   6. mobs
-   7. itens
-   8. money
-3. encounters
+3. places
+   1. mobs
+   2. itens
+   3. money
+4. encounters
    1. npc
    2. player
    3. itens

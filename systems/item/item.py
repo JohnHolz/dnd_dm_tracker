@@ -1,6 +1,6 @@
-from jh_utils.utils.utils import to_print_dict
+from jh_utils.utils.utils import to_print_dict, to_print_list
+from jh_utils.utils.mensages import get_line, line
 line = '\n+-------------------------------+\n'
-
 class Item():
     def __init__(self, 
                  name, 
@@ -19,24 +19,21 @@ class Item():
         self.other_info = {}
         self.magical = magical
         if magical:
-            self.magical = {
+            self.special = {
                 'special_habilities':{},
                 'hidden_habilities':{}
             }
 
 
     def __repr__(self):
-        if self.magical:
-            magical_repr = f"""\nmagical:{to_print_dict(self.magical)}\n"""
+        unique = 'Unique' if self.unique else 'Non-unique'
+        magical = 'Magical' if self.magical else 'Non-Magical'
+        special = f'\nSpecial:{to_print_list(list(self.special["special_habilities"].keys()))}'
+        hidden = f'\nHidden:{self.to_print_hidden()}'
         ret = f"""{self.name}
-            unique:  {self.unique}
-            type:    {self.item_type}
-            
-            status: {to_print_dict(self.status)} {magical_repr}
-            
-            description
-            {self.description}
-            """
+            type: {self.item_type}
+            {magical} {unique}
+            status:{to_print_dict(self.status)}{special}{hidden}"""
         return ret
         
     ## description
@@ -58,10 +55,25 @@ class Item():
     ##! other info
     def add_info(self, key, value):
         self.other_info[key] = value
-        
+
+    ##! add tag
+    def add_tag(self, new_tag):
+        self.tags = self.tags + [new_tag]
+
+    ##! get events
+    def get_events():
+        pass
+
+    def to_print_hidden(self):
+        ret = ''
+        hidden_habilities = self.special['hidden_habilities']
+        for i in hidden_habilities.keys():
+            ret = ret + f'{i} → block: {hidden_habilities[i]["block"]} \n       '
+        return ret
+    
     ##! Special
     def add_special_hability(self, hability):
-        self.magical['special_habilities'][hability.name] = hability
+        self.special['special_habilities'][hability.name] = hability
 
     def add_hidden_hability(self, hability, block):
-        self.magical['hidden_habilities'][hability.name]={'hability':hability, 'block':block}
+        self.special['hidden_habilities'][hability.name]={'hability':hability, 'block':block}

@@ -3,9 +3,9 @@ sys.path.append('../')
 from world.time import DateTime
 from world.places.places import Selgaunt
 from characters.party import Vutar, Benio, Bushi, Aussyrk, Party
-
+party_char_list = Party
 line = '\n+----------------------------------+\n'
-party_char_list = [Vutar, Benio, Bushi, Aussyrk]
+from jh_utils.utils.utils import to_print_dict
 
 class Event():
     def __init__(self, time, place, description='', party=True, npcs=[], chars=[]):
@@ -30,20 +30,11 @@ class Event():
     
     def __repr__(self):
         ## npcs
-        if self.npcs==[]: 
-            npcs = ''
-        else:
-            npcs=f'\n        npcs:{self.npcs}\n'
+        npcs = '' if self.npcs==[] else f'\n        npcs:{self.npcs}\n'
         ## mobs
-        if self.mobs=={}: 
-            mobs = ''
-        else:
-            mobs=f'\n        {self.mobs}\n'
+        mobs = '' if self.mobs=={} else f'\n        {self.mobs}\n'
         ## full party
-        if self.full_party:
-            party_show = f'Full Party'
-        else:
-            party_show = f'{self.chars}'
+        party_show = f'Full Party' if self.full_party else f'{self.chars}'
 
         ret = f"""{line}{self.time}
         → {self.place}

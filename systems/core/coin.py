@@ -7,13 +7,12 @@ class Money():
         self.pp = pp
 
     def __repr__(self):
-        ret = f"""
-        cp: {self.cp}
-        sp: {self.sp}
-        ep: {self.ep}
-        gp: {self.gp}
-        pp: {self.pp}
-        """
+        cp = '' if self.cp == 0 else f'cp: {self.cp}\n'
+        sp = '' if self.sp == 0 else f'sp: {self.sp}\n'
+        ep = '' if self.ep == 0 else f'ep: {self.ep}\n'
+        gp = '' if self.gp == 0 else f'gp: {self.gp}\n'
+        pp = '' if self.pp == 0 else f'pp: {self.pp}\n'
+        ret = f'{cp}{sp}{ep}{gp}{pp}'
         return ret
 
     def __add__(self, other):

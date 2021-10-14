@@ -9,8 +9,8 @@ class Hability():
 
     def __repr__(self) -> str:
         ret = f"""{line}{self.name}
-        cost:           {self.cost}
-        effect:         {self.effect}
-        roll:           {self.roll}
-        description:    {self.description}{line}"""
+    cost:           {self.cost}
+    roll:           {self.roll}
+    effect:         {self.effect}
+    description:    {self.description}{line}"""
         return ret

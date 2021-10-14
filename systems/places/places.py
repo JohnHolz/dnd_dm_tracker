@@ -19,8 +19,8 @@ class Room():
 
     def __repr__(self):
         ret = f"""{self.name}
-            where:       {self.where}
-            description: {self.description}"""
+        where:       {self.where}
+        description: {self.description}"""
         return ret
 
     # first updatable
@@ -71,7 +71,7 @@ class Place():
         self.tags = self.tags + [new_tag]
 
     def __repr__(self):
-        ret = f"""{self.name}, {self.where}"""
+        ret = f"""{self.name}\nwhere: {self.where}"""
         return ret
 
     # add npcs
@@ -100,3 +100,4 @@ class Place():
     def add_description(self, string: str):
         self.description['description'] = self.description['description'] + \
             line+f"""\n {string}"""
+

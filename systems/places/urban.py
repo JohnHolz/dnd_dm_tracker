@@ -2,7 +2,6 @@ import sys
 sys.path.append('../')
 line = '\n+-------------------+\n'
 
-
 class Urban():
     def __init__(self, name, subtitle, urban_type='village', description=''):
         self.name = name

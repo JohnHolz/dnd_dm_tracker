@@ -4,9 +4,10 @@ line = '\n+-------------------------------+\n'
 class Item():
     def __init__(self, 
                  name, 
-                 description='', item_type = '',
+                 subtitle='', item_type = '',
                  magical=False, unique = False, owner=None):
         self.name = name
+        self.subtitle = subtitle
         self.description = description
 
         ## core info

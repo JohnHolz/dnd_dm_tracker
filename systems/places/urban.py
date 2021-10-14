@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 line = '\n+-------------------+\n'
 
 
@@ -8,7 +10,6 @@ class Urban():
         self.urban_type = urban_type
         # intern places
         self.places = {}  # TODO function to list all places that have this as major place
-        self.events = {}  # TODO function to list all events envolving this major place
         self.other = {}
         self.tags = []
         # npcs
@@ -34,9 +35,7 @@ class Urban():
         }
 
     def __repr__(self):
-        ret = f"""{self.name}
-            {self.subtitle}
-            {self.urban_type}"""
+        ret = f"""{self.name}, {self.subtitle}"""
         return ret
 
     def add_tag(self, new_tag):
@@ -51,8 +50,6 @@ class Urban():
 
     def add_place(self, place):
         self.places[place.name] = place
-    # def add_event(self, event):
-    #     self.events[event.name] = event
 
     def add_info(self, key: str, string: str):
         self.other[key] = string

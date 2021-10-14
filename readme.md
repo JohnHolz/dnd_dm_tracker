@@ -4,7 +4,52 @@ As a GM i need to keep track of a lot of ideas, encounters, events, rounds, part
 
 Maybe someday i will do a website but the focus is to create some notebooks and a database to keep track of my dnd tables.
 
+# Atomic Systems
+
+1. Events - ok
+2. Dice   - ok
+3. Coin   - ok
+4. Hability - ok
+5. Status - ok
+
+# Systems Tree
+
+1. itens
+   1. hability
+   2. events
+   3. dice
+   4. value
+2. Chars
+   1. npcs
+      1. status
+      2. itens
+      3. habilities
+      4. coin (money)
+      5. events
+   2. charactes
+      1. status
+      2. itens
+      3. habilities
+      4. money
+      5. events
+   3. mobs
+      1. status
+      2. habilities
+   4. mobs_group
+      1. mobs
+      2. boss
+2. places
+   6. mobs
+   7. itens
+   8. money
+3. encounters
+   1. npc
+   2. player
+   3. itens
+   4. place
+
 ## What to track:
+
 1. Our characters
    1. npc
    2. chars
@@ -22,21 +67,3 @@ Maybe someday i will do a website but the focus is to create some notebooks and 
       2. lore
       3. events with our party
       4. npcs
-
-## Systems to be implemented
-1. Core Mechenics
-   1. dice system - ok
-   2. coin system - ok
-   3. hability    - ok
-   4. status      - ok
-2. Core
-   1. char
-      1. npcs - mess
-      2. chars - not started
-   2. encounter - almost
-   3. events - ok
-   4. places - ok
-   5. item - 
-   6. world
-      1. Calendar - ok
-      2. Datetime - ok

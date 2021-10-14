@@ -1,5 +1,8 @@
-line = '\n+-------------------+\n'
+import sys
+sys.path.append('../')
+from game.event import list_evets
 
+line = '\n+-------------------+\n'
 
 class Room():
     def __init__(self, name, where, description=''):
@@ -55,20 +58,20 @@ class Place():
             'other_npcs': []
         }
         self.rooms = {}
-        self.events = {}
         self.other = {}
         self.description = {
             'lore': lore,
             'description': ''}
         self.tags = []
 
+    def return_events(self):
+        return list_evets(self.name)
+
     def add_tag(self, new_tag):
         self.tags = self.tags + [new_tag]
 
     def __repr__(self):
-        ret = f"""{self.name}
-            where:   {self.where}
-            what:    {self.what}"""
+        ret = f"""{self.name}, {self.where}"""
         return ret
 
     # add npcs

@@ -54,3 +54,9 @@ class Event():
         {line}
         """
         return ret
+
+def evets(order):
+    pass
+
+def list_evets():
+    pass

@@ -12,6 +12,7 @@ class Room():
         self.hidden = {}  # hidden info
 
         self.itens = []
+        self.tags = []
 
     def __repr__(self):
         ret = f"""{self.name}
@@ -23,6 +24,9 @@ class Room():
     def add_description(self, string: str):
         self.description = f"""{self.description}
         {string}"""
+
+    def add_tag(self, new_tag):
+        self.tags = self.tags + [new_tag]
 
     # add to dictionaries
     def add_mob(self, mob_name, mob_count=1):
@@ -56,6 +60,10 @@ class Place():
         self.description = {
             'lore': lore,
             'description': ''}
+        self.tags = []
+
+    def add_tag(self, new_tag):
+        self.tags = self.tags + [new_tag]
 
     def __repr__(self):
         ret = f"""{self.name}

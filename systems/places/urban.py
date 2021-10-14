@@ -10,6 +10,7 @@ class Urban():
         self.places = {}  # TODO function to list all places that have this as major place
         self.events = {}  # TODO function to list all events envolving this major place
         self.other = {}
+        self.tags = []
         # npcs
         self.npcs = {
             'npcs_from_places': [],  # TODO function to list places
@@ -37,6 +38,9 @@ class Urban():
             {self.subtitle}
             {self.urban_type}"""
         return ret
+
+    def add_tag(self, new_tag):
+        self.tags = self.tags + [new_tag]
 
     # update description and spermm
     def add_info(self, where: str = 'description', string: str = ''):

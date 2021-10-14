@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
-from ..world.time import DateTime
+import sys
+sys.path.append('../')
+from world.time import DateTime
 
 def get_calendar():
     day = pd.DataFrame(pd.Series(np.arange(0,400)),columns=['day'])

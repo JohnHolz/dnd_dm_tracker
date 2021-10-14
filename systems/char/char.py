@@ -36,7 +36,3 @@ class Char():
         return ret
 
 
-Vutar = Char('Vutar')
-Benio = Char('Benio')
-Bushi = Char('Bushi')
-Aussyrk = Char('Aussyrk')

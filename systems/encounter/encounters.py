@@ -1,4 +1,6 @@
-from ..core.coin import Money
+import sys
+sys.path.append('../')
+from core.coin import Money
 
 class Encounter():
     def __init__(self, first_idea):
@@ -9,6 +11,7 @@ class Encounter():
         self.npcs = {}
         self.plot = ''
         self.rewards = {'money':Money(0,0,0,0,0)}
+        self.tags = []
     
     """
     @ name - String
@@ -25,6 +28,9 @@ class Encounter():
         * common_itens: list
         * magical_itens: list
     """
+
+    def add_tag(self, new_tag):
+        self.tags = self.tags + [new_tag]
 
     def __repr__(self):
         return self.name

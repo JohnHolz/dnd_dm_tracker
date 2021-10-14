@@ -1,5 +1,7 @@
 ## Systems
 
+ps:'A deaf bard has a 20% chance to fail when attempting to use a bardic performance'
+
 Some of mine dm systems:
 1. AC
 2. Travelling

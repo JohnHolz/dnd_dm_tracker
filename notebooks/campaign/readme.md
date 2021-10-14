@@ -1,4 +1,45 @@
-# npcs repr
+# Repr to been seen in notebooks
+
+## Encounter
+
+    Encounter Name
+        place:
+        mobs:
+        boss:
+        rewards:
+        basic plot:
+
+hidden:
+    plot description:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ..."
+
+## Events
+
+    time:
+        place
+        who
+        description
+        npcs
+
+## Places
+
+### Urban
+
+    name, subtitle
+
+### Place
+
+    place name, type
+
+### Room
+
+    room name, subtitle
+
+## Item
+
+    place name, subtitle
+
+## npcs
+
     Rudgar Cavebreaker
         race:            dwarf
         class:           high mage
@@ -11,26 +52,12 @@
         habilities
         money
 
-# Encounter repr
-    Encounter Name
-        place:
-        mobs:
-        boss:
-        rewards:
-        basic plot:
-    
-    hidden:
-        plot description:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ..."
-    
-# Events repr
-    time:
-        place
-        who
-        description
-        npcs
+## Order - Mob group
 
-# Places repr
-    place name
+    Order Name
+        boss: boss
+        mob1: number
+        mob2: number
 
-# Item repr
-    place name
+
+

@@ -1,6 +1,12 @@
 # Places
 
-## Places 
+| Type   | Contains    | ---             |
+| ------ | ----------- | --------------- |
+| Room   | mobs, items | Small           |
+| Places | npcs        | Contains rooms  |
+| Urban  | ---         | Contains places |
+
+## Places
 
 ## Types of Places
 
@@ -17,7 +23,7 @@
       5. military
       6. magical
    3. intern places
-2. Intern places 
+2. Intern places
    1. types
       1. open places
          1. dungeons
@@ -72,5 +78,3 @@
             central square
             castle
       ---
-
-

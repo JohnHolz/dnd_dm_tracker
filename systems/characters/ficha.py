@@ -5,6 +5,7 @@ from monetary_system import Money
         'name': 'choosen fire',
         'class': 'novice',
         'lvl': 1,
+        'xp': 0,
         'race': 'human',
         'subraces': 'none',
         'languages': {'common'},
@@ -26,15 +27,9 @@ from monetary_system import Money
 
     'connections': {},
 
-    # ! keep track
-    'daily': {
-        'gold': Money(),
-        'hp': 0,
-        'xp': 0,
-    },
-
     # ! combat
     'combat': {
+        'hp': 0,
         'passive-perception': 11,
         'CA': 10,
         'initiative': 0,
@@ -42,8 +37,14 @@ from monetary_system import Money
 
     # ! equipament
     'equipament': {
+        'gold': Money(),
         'armor': {},
         'weapon': {},
         'itens': {},
     },
+
+    # ! arcane
+    'arcane':{
+        
+    }
 }

@@ -1,38 +1,40 @@
-## Systems
+# Systems Tree
 
-ps:'A deaf bard has a 20% chance to fail when attempting to use a bardic performance'
+## Core
 
-Some of mine dm systems:
-1. AC
-2. Travelling
+| System Name | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| coin        | Money class + coin changes                           |
+| dice        | Dice rolls function                                  |
+| dnd5eapi    | Dnd things from book (Monsters, magic-itens, spells) |
+| event       | Declare campaing events to remember later            |
+| item        | To create a item                                     |
+| mob_group   | Create a mob party (mobs + boss, kobolds + basilisk) |
+| status      | Declare a status class to get modifiers faster       |
+| time        | Time class, when something happens                   |
 
----
-<br>   
+## Biger
 
-# Role Play AC:
+| System Name | Sub System | Core Systens needed         | Description                                    |
+| ----------- | ---------- | --------------------------- | ---------------------------------------------- |
+| Characters  | NPCs       | coin, spells, item          | NPCs class and random creation                 |
+| Place       | Party char | npc, item                   | Place Class to add                             |
+| Encounter   | Party char | monsters, place, item, npcs | Future Encounter ideas and possible encounters |
 
-AC              |AC value                           |block type
- ---            |---                                |---
-natural deffense| 0 < atak < 10                     | miss
-armor           | 10 < atak < 10+armor              | armor protection
-shield          | 10+armor < atak < 10+armor+shield | blocked
+## What to track:
 
-<br>
-
-#### Examples:
-1. atak roll 13 - the armor protected   
-   1. natural def - 10
-   2. armor 14
-   3. shield +2
-2. atak roll 15 - shield blocked   
-   1. natural def - 10
-   2. armor 14
-   3. shield +2
-3. atak roll 8 - missed the atak   
-   1. natural def - 10
-   2. armor 14
-   3. shield +2
-4. atak roll 18 - hit   
-   1. natural def - 10
-   2. armor 14
-   3. shield +2
+1. Our characters
+   1. npcs
+   2. hour party
+2. future encounters
+3. game
+   - save past events
+   - info to recall later
+4. itens
+   - itens you created
+   - party itens
+   - important itens of your world that you dont wanna miss and want to re-use
+5. Rest of the information we will use Dnd5eapi
+   1. Monsters
+   2. Equipment and Magical items (most of then)
+   3.

@@ -7,7 +7,7 @@ class Encounter():
         self.first_idea = first_idea
         self.name = ''
         self.locaton_type = []
-        self.monsters = {'order1':[],'boss':[]}
+        self.monsters = {}
         self.npcs = {}
         self.plot = ''
         self.rewards = {'money':Money(0,0,0,0,0)}

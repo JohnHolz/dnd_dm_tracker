@@ -36,3 +36,51 @@ class Char():
         return ret
 
 
+
+class Char():
+    def __init__(self, nome):
+        self.nome = nome
+        self.connection = {}
+    
+    def def_core(self, 
+             rpg_class, 
+             lvl, 
+             race, 
+             subrace, 
+             alignment, 
+             background, 
+             flaws={}, 
+             languages={'common':'fluent'}, 
+             subclass=None, 
+             xp=0):
+        self.rpg_class = rpg_class
+        self.lvl = lvl
+        self.race = race
+        self.subrace = subrace
+        self.alignment = alignment
+        self.background = background
+        self.flaws = flaws
+        self.languages = languages
+        self.subclass = subclass
+        self.xp = xp
+
+    def def_appearance(self,
+                   age,
+                   height,
+                   weight,
+                   skin,
+                   eyes,
+                   hair = None,
+                   size = 'Medium'):
+        self.appearance = {
+            'age': age,
+            'height': height,
+            'weight': weight,
+            'skin': skin,
+            'eyes': eyes,
+            'hair': hair,
+            'size': size,
+        }
+
+    def add_connection(self, new_connection, connection_description = ''):
+        self.connection[new_connection] = connection_description

@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../../')
-from places.urban import Urban
+from places.places import Urban
 
 Selgaunt = Urban('Selgaunt','a Cidade Branca, Capital Militar','city')
 description = """    - Cidade praticamente toda em pedra, arquitetura aredondada com pilares largos. 

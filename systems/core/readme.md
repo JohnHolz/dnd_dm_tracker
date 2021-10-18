@@ -4,11 +4,14 @@ Core systems composes othe big systems. To create an NPC or a char we need, mone
 
 | System     | Description                                            |
 | ---------- | ------------------------------------------------------ |
-| Events     | Past events to keep                                    |
-| Dice       | Rolls                                                  |
 | Coin       | Money System                                           |
-| Status     | Status + Modifiers                                     |
+| Dice       | Rolls                                                  |
 | Dnd 5e api | Use Dnd 5e api to get access to all the things we need |
+| Event      | Past events to keep                                    |
+| Item       | Item creation                                          |
+| Mob group  | Enemy group to be used in encounters                   |
+| Status     | Status + Modifiers                                     |
+| Time       | World time and calendar to be used                     |
 
 # Events
 

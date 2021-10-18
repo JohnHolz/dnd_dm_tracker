@@ -11,8 +11,12 @@ def get_magic_schools():
 ## ! monsters
 def get_monsters():
     return rq.get(base_url+ 'monsters/')
+def get_monster(monster):
+    return rq.get(base_url+ 'monsters/'+monster)
 def get_traits():
     return rq.get(base_url+ 'traits/')
+def get_trait(trait):
+    return rq.get(base_url+ 'traits/'+trait)
 
 ## ! battle
 def get_conditions():

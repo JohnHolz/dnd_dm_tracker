@@ -8,10 +8,9 @@ class Encounter():
         self.name = ''
         self.locaton_type = []
         self.monsters = {}
-        self.npcs = {}
+        self.npcs = []
         self.plot = ''
         self.rewards = {'money':Money(0,0,0,0,0)}
-        self.tags = []
     
     """
     @ name - String
@@ -29,21 +28,14 @@ class Encounter():
         * magical_itens: list
     """
 
-    def add_tag(self, new_tag):
-        self.tags = self.tags + [new_tag]
-
     def __repr__(self):
         return self.name
 
-    #!##################
     ## ! location
-    #!##################
     def add_location(self, location):
         self.locaton = self.locaton + [location]
 
-    #!##################
     ## ! npcs
-    #!##################
     def add_npc(self, npc, text):
         ret = f'self.npcs["{npc}"] = "{text}"'
         exec(ret)
@@ -52,9 +44,7 @@ class Encounter():
         ret = f'del r["{npc}"]'
         exec(ret)
 
-    #!##################
     ## ! rewards
-    #!##################
     def set_gp(self, value):
         self.rewards['gp'] = value
 
@@ -64,9 +54,7 @@ class Encounter():
     def add_magical_item(self, magical_item):
         self.rewards['magical_items'] = self.rewards['magical_items'] + [magical_item]
 
-    #!##################
     ## ! plot
-    #!##################
     def add_info(self, new_info):
         self.plot = self.plot + f'\n{new_info}'
     

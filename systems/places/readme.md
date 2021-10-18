@@ -6,8 +6,6 @@
 | Places | npcs        | Contains rooms  |
 | Urban  | ---         | Contains places |
 
-## Places
-
 ## Types of Places
 
 1. Cities, Town and villages

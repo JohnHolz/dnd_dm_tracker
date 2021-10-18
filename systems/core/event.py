@@ -1,8 +1,8 @@
 import sys
 sys.path.append('../')
-from world.time import DateTime
-from world.places.places import Selgaunt
-from characters.party import Vutar, Benio, Bushi, Aussyrk, Party
+from world.places import Selgaunt
+from world.party import Party
+
 party_char_list = Party
 line = '\n+----------------------------------+\n'
 from jh_utils.utils.utils import to_print_dict

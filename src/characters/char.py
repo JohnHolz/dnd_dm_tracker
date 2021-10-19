@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../')
-from core.coin import Money
+from small.coin import Money
 from numpy.random import randint
 
 races = ['High Elf',

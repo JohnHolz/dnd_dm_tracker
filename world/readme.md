@@ -15,16 +15,17 @@ I created a new age system because after and before Christ doest apply to Dnd. S
 
 Im using a 16 month system to be diferent and add cool information and lore to the world.
 Every month have a name of a god, and in the middle of the month that god are more cultuated
-Month number | Season | Months | Days
----|---|---|---
-1 | Cold Season | Auril`s Month | 25 2 | Cold Season | Celestia`s Month | 25
-3 | Cold Season | Leira`s Month | 25 4 | Cold Season | Corellon`s Month | 25
-5 | Flowers Season | Rillifane`s Month | 25 6 | Flowers Season | Sehanine Moonbow`s Month | 25
-7 | Flowers Season | Malar`s Month | 25 8 | Flowers Season | Lilira`s Month | 25
-9 | Sun Season | Pelor`s Month | 25 10 | Sun Season | Bahamut`s Month | 25
-11 | Sun Season | Tiamat`s Month | 25 12 | Sun Season | Heironeous`s Month | 25
-13 | Wood Season | Tempus`s Month | 25 14 | Wood Season | Kord`s Month | 25
-15 | Wood Season | Talos`s Month | 25 16 | Wood Season | Ogmhar`s Month | 25
+
+| Month number | Season         | Months            | Days |
+| ------------ | -------------- | ----------------- | ---- |
+| 1            | Cold Season    | Auril`s Month     | 25   |
+| 3            | Cold Season    | Leira`s Month     | 25   |
+| 5            | Flowers Season | Rillifane`s Month | 25   |
+| 7            | Flowers Season | Malar`s Month     | 25   |
+| 9            | Sun Season     | Pelor`s Month     | 25   |
+| 11           | Sun Season     | Tiamat`s Month    | 25   |
+| 13           | Wood Season    | Tempus`s Month    | 25   |
+| 15           | Wood Season    | Talos`s Month     | 25   |
 
 ## Ages
 
@@ -35,10 +36,10 @@ The age is changed at the end of an important year that ends a important event/e
 | First Age        | fa.         | 50_000 first years |
 | God`s Era        | ge.         | ~200_000 lasted    |
 | Higher beens war | wa.         | ~20_000            |
-| First Mortal Era | fe.         | ~50_000            |
-| First Great war  | we.         | ~5000              |
-| Second Great Era | se.         | 15_000             |
-| Second Great war | sw.         | 2000               |
+| First Mortal Era | fe.         | ~2000              |
+| First Great war  | we.         | ~1000              |
+| Second Great Era | se.         | 5000               |
+| Second Great war | sw.         | 500                |
 | Third Era        | te.         | 1000~now           |
 
 ---
@@ -75,45 +76,3 @@ The age is changed at the end of an important year that ends a important event/e
 | Ogmhar              | N         | Knowledge   | Escolas de magia                                                |
 | Auril               | N         | Ice         | Escolas de magia                                                |
 | Paimon              | LE        | Demons      | Outro plano, Cultos                                             |
-
-# My rules
-
-Some of mine dm systems:
-
-1. AC
-2. Travelling
-
----
-
-<br>
-
-ps:'A deaf bard has a 20% chance to fail when attempting to use a bardic performance'
-
-## Role Play AC:
-
-| AC               | AC value                          | block type       |
-| ---------------- | --------------------------------- | ---------------- |
-| natural deffense | 0 < atak < 10                     | miss             |
-| armor            | 10 < atak < 10+armor              | armor protection |
-| shield           | 10+armor < atak < 10+armor+shield | blocked          |
-
-<br>
-
-#### Examples:
-
-1. atak roll 13 - the armor protected
-   1. natural def - 10
-   2. armor 14
-   3. shield +2
-2. atak roll 15 - shield blocked
-   1. natural def - 10
-   2. armor 14
-   3. shield +2
-3. atak roll 8 - missed the atak
-   1. natural def - 10
-   2. armor 14
-   3. shield +2
-4. atak roll 18 - hit
-   1. natural def - 10
-   2. armor 14
-   3. shield +2

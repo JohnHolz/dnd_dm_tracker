@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../')
-from core.coin import Money
+from small.coin import Money
 
 class Encounter():
     def __init__(self, name,first_idea):

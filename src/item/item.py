@@ -29,4 +29,12 @@ class Item():
         print_dict(self.description)
 
     def get_item_json(self):
-        ret = {self.name}
+        ret = dict()
+        ret['name'] = self.name
+        ret['equipment_category'] = self.equipment_category
+        ret['description'] = self.description
+        return ret
+
+def get_item(item_name):
+    "read the db in world and return an item"
+    return item_name

@@ -10,26 +10,16 @@ class Encounter():
         self.monsters = {}
         self.npcs = {}
         self.plot = ''
-        self.rewards = {'money':Money(0,0,0,0,0)}
+        self.rewards = {'money':Money(0,0,0,0,0),
+                        'common_itens':[],
+                        'magical_items':[]}
     
-    """
-    @ name - String
-    @ location - vector
-    @ monsters - dict in orders + boss
-        * order - list
-        * sub-boss - list
-        * boss - string
-    @ npcs - dict 
-        * key:npc name
-        * value:part in the encounter
-    @ rewards - dict
-        * gp: value
-        * common_itens: list
-        * magical_itens: list
-    """
-
     def __repr__(self):
-        return self.name
+        ret = f'''{self.name} - {self.location}
+{self.monsters}
+{self.rewards}
+{self.plot}'''
+        return ret
 
     ## ! location
     def add_location(self, location):
@@ -44,6 +34,9 @@ class Encounter():
         ret = f'del r["{npc}"]'
         exec(ret)
 
+    def add_mob_group(self, mob_group):
+        self.monsters = mob_group
+
     ## ! rewards
     def add_item(self, item):
         self.rewards['common_itens'] = self.rewards['common_itens'] + [item]
@@ -57,3 +50,19 @@ class Encounter():
     
     def set_plot(self, new_plot):
         self.plot = self.name + f'\n{new_plot}'
+
+def create_encounter(encounter_name,
+                     location,
+                     monsters,
+                     npcs,
+                     plot,
+                     rewards,
+                     first_idea = ''):
+    encounter = Encounter(encounter_name,
+                          first_idea)
+    encounter.add_location(location)
+    encounter.add_mob_group(monsters)
+    encounter.npcs = npcs
+    encounter.rewards = rewards
+    encounter.plot = plot
+    return Encounter

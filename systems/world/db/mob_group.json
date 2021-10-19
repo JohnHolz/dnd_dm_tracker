@@ -1,0 +1,18 @@
+[
+    {
+        "index":"chain-devil",
+        "mobs":{
+            "imp":4,
+            "spined-devil":4
+        },
+        "boss":"chain-devil"
+    },
+    {
+        "index":"night-haglvl10",
+        "mobs":{
+            "green-hag":1,
+            "night-hag":2
+        },
+        "boss":"night-hag-lvl-10"
+    }
+]

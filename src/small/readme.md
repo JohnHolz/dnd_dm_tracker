@@ -1,5 +1,7 @@
 # Core
 
+
+
 Core systems composes othe big systems. To create an NPC or a char we need, money, past events, habilities, dice, status...
 
 | System     | Description                                            |

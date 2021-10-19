@@ -32,7 +32,7 @@ eras = {'fa.': {'name': 'First Age', 'years': '5000~50_000'},
         'te.': {'name': 'Third Era', 'years': 'now = 1300'}, }
 
 
-class DateTime():
+class Time():
     def __init__(self, day, hour=0, minute=0, year=0, era='te.'):
         self.year = year
         self.day = day
@@ -72,13 +72,13 @@ class DateTime():
         if day >= 400:
             year = year+int(hour/400)
             day = hour % 400
-        return DateTime(day, hour, minute, year)
+        return Time(day, hour, minute, year)
 
     def foward(self, value, update):
         if update == 'day':
-            return self + DateTime(value, 0)
+            return self + Time(value, 0)
         if update == 'hour':
-            return self + DateTime(0, value)
+            return self + Time(0, value)
 
 
 def get_calendar():
@@ -95,7 +95,7 @@ def get_calendar():
     calendar = day.drop('key', axis=1)
 
     def ap(serie):
-        return DateTime(serie[0])
+        return Time(serie[0])
 
     calendar['re'] = calendar.apply(ap, axis=1)
     calendar['month'] = calendar['re'].apply(lambda x: x.month)

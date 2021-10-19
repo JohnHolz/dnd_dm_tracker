@@ -8,38 +8,35 @@ Handcode the fewest as possible to track my dnd tables. So I will create a dozen
 
 # Folder Structure
 
-    ├── campaigns:
-    │    ├── <campaign_name>
-    │    ├── <campaign_name_2>
-    │    └── default_folder
-    |          ├── db
-    |          ├── curent-place-and-combat.ipynb 
-    |          ├── events.ipynb 
-    |          ├── chars.ipynb 
-    |          └── random-encounters.ipynb 
-    │
-    ├── creation:
-    │    ├── encounter_creation.ipynb
-    │    ├── npcs_creation.ipynb
-    │    ├── mob_group_creation.ipynb
-    │    └── ...
-    │
-    ├── src:
-    │    ├── encounter_creation.ipynb
-    │    ├── npcs_creation.ipynb
-    │    ├── mob_group_creation.ipynb
-    │    └── ...
-    │
-    │
-    │
-    └── world:
-         ├── characters:
-         ├── core:
-         ├── d02_modeling
-         ├── d03_model_evaluation
-         ├── d04_reporting
-         └── d05_collector
-
+    1. campaigns:
+       1. campaign_name --------------------> campaign been or finished run
+       2. campaign_name_2 ------------------> campaign been or finished run
+       3. default_folder -------------------> folder to copy and paste and start campaign
+           1. db ---------------------------> save the events of the campaign
+           2. current-place.ipynb ----------> fast information of the party and npcs
+           3. events.ipynb -----------------> declaring events
+           4. major-plots.ipynb ------------> major plot notes
+           5. random-encounters.ipynb ------> random encounters / happenings
+    2. creation:
+       1. encounter-creation.ipynb ---------> encounter creation and save in world db
+       2. npc-creation.ipynb ---------------> npc creation and save in word db
+       3. mob-group-creation.ipynb ---------> balance encounters
+    3. src
+       1. characters -----------------------> char class
+       2. dnd5eapi -------------------------> bunch of api get requests built
+       3. encounter ------------------------> encounter class
+       4. game -----------------------------> game class and event class
+       5. item -----------------------------> item class
+       6. npcs -----------------------------> npc class
+       7. place ----------------------------> urban, place and room classes
+       8. small ----------------------------> small systems
+       9. tests ----------------------------> test of all src folder
+    4. world
+       1. db -------------------------------> folder to save all you create
+       2. locane ---------------------------> a continent folder to pre-build objects to fast access
+       3. lossenue -------------------------> a continent folder to pre-build objects to fast access
+       4. rules ----------------------------> my roleplay rules accessile
+       5. utils.py -------------------------> util objects
 
 # 1.0.0
 

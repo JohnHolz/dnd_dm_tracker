@@ -2,70 +2,67 @@ import requests as rq
 
 base_url = 'https://www.dnd5eapi.co/api/'
 
-## ! spells
-def get_spells():
-    return rq.get(base_url+ 'spells/')
-def get_magic_schools():
-    return rq.get(base_url+ 'magic-schools/')
+# ! spells
+def get_spells(spell=''):
+    return rq.get(base_url + 'spells/' + spell)
+def get_magic_schools(magic_school=''):
+    return rq.get(base_url + 'magic-schools/' + magic_school)
 
-## ! monsters
-def get_monsters():
-    return rq.get(base_url+ 'monsters/')
-def get_monster(monster):
-    return rq.get(base_url+ 'monsters/'+monster)
-def get_traits():
-    return rq.get(base_url+ 'traits/')
-def get_trait(trait):
-    return rq.get(base_url+ 'traits/'+trait)
+# ! monsters
+def get_monsters(monster=''):
+    return rq.get(base_url + 'monsters/' + monster)
+def get_traits(trait=''):
+    return rq.get(base_url + 'traits/' + trait)
 
-## ! battle
-def get_conditions():
-    return rq.get(base_url+ 'conditions/')
-def get_damage_types():
-    return rq.get(base_url+ 'damage_types/')
+# ! battle
+def get_conditions(condition=''):
+    return rq.get(base_url + 'conditions/' + condition)
+def get_damage_types(damage_type=''):
+    return rq.get(base_url + 'damage-types/' + damage_type)
 
-## ! items
-def get_equipment_categories():
-    return rq.get(base_url+ 'equipment_categories/')
-def get_equipment():
-    return rq.get(base_url+ 'equipment/')
-def get_weapon_properties():
-    return rq.get(base_url+ 'weapon-properties/')
+# ! items
 
-## ! magic items
-def get_magic_items():
-    return rq.get(base_url+ 'magic-items/')
-def get_magic_item(magical_item_name):
-    return rq.get(base_url+'magic-items/'+magical_item_name)
+def get_equipment_categories(equipment_categorie=''):
+    return rq.get(base_url + 'equipment-categories/'+equipment_categorie)
+def get_equipments(equipment=''):
+    return rq.get(base_url + 'equipment/'+equipment)
+def get_weapon_properties(weapon_properties=''):
+    return rq.get(base_url + 'weapon-properties/'+weapon_properties)
 
-## ! char
-def get_ability_scores():
-    return rq.get(base_url+'ability-scores/')
-def get_alignments():
-    return rq.get(base_url+ 'alignments/')
-def get_backgrounds():
-    return rq.get(base_url+ 'backgrounds/')
-def get_languages():
-    return rq.get(base_url+ 'languages/')
-def get_classes():
-    return rq.get(base_url+ 'classes/')
-def get_subclasses():
-    return rq.get(base_url+ 'subclasses/')
-def get_races():
-    return rq.get(base_url+ 'races/')
-def get_subraces():
-    return rq.get(base_url+ 'subraces/')
-def get_skills():
-    return rq.get(base_url+ 'skills/')
-def get_features():
-    return rq.get(base_url+ 'features/')
-def get_proficiencies():
-    return rq.get(base_url+ 'proficiencies/')
-def get_feats():
-    return rq.get(base_url+ 'feats/')
+# ! magic items
 
-## ! dm
-def get_rule_sections():
-    return rq.get(base_url+ 'rule-sections/')
-def get_rules():
-    return rq.get(base_url+ 'rules/')
+def get_magic_items(magic_item=''):
+    return rq.get(base_url+'magic-items/'+magic_item)
+
+# ! char
+
+def get_ability_scores(ability=''):
+    return rq.get(base_url+'ability-scores/' + ability)
+def get_races(race=''):
+    return rq.get(base_url + 'races/' + race)
+def get_subraces(subrace=''):
+    return rq.get(base_url + 'subraces/'+subrace)
+def get_classes(classe=''):
+    return rq.get(base_url + 'classes/' + classe)
+def get_subclasses(subclasse=''):
+    return rq.get(base_url + 'subclasses/' + subclasse)
+def get_alignments(alignment=''):
+    return rq.get(base_url + 'alignments/' + alignment)
+def get_backgrounds(background=''):
+    return rq.get(base_url + 'backgrounds/'+background)
+def get_languages(language=''):
+    return rq.get(base_url + 'languages/' + language)
+def get_skills(skill=''):
+    return rq.get(base_url + 'skills/' + skill)
+def get_features(features=''):
+    return rq.get(base_url + 'features/' + features)
+def get_proficiencies(proficiencie=''):
+    return rq.get(base_url + 'proficiencies/' + proficiencie)
+def get_feats(feat=''):
+    return rq.get(base_url + 'feats/' + feat)
+
+# ! dm
+def get_rule_sections(rule):
+    return rq.get(base_url + 'rule-sections/' + rule)
+def get_rules(rule):
+    return rq.get(base_url + 'rules/' + rule)

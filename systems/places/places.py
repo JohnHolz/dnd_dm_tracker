@@ -1,7 +1,5 @@
 import sys
 sys.path.append('../')
-# from game.event import list_evets
-
 
 class Room():
     def __init__(self, name, where, add_appearence_description=None, itens: list = []):

@@ -1,11 +1,9 @@
 import sys
 sys.path.append('../')
-from world.places import Selgaunt
 from world.party import Party
-
-party_char_list = Party
-line = '\n+----------------------------------+\n'
 from jh_utils.utils.utils import to_print_dict
+
+party_char_list = []
 
 class Event():
     def __init__(self, time, place, description='', party=True, npcs=[], chars=[]):
@@ -36,14 +34,7 @@ class Event():
         ## full party
         party_show = f'Full Party' if self.full_party else f'{self.chars}'
 
-        ret = f"""{line}{self.time}
+        ret = f"""{self.time}
         → {self.place}
-        → {party_show}{npcs}{mobs}{to_print_dict(self.info)}{line}
-        """
+        → {party_show}{npcs}{mobs}{to_print_dict(self.info)}"""
         return ret
-
-def evets(order):
-    pass
-
-def list_evets():
-    pass

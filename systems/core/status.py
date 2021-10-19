@@ -1,4 +1,3 @@
-line = '\n+-------------+\n'
 class Status():
     def __init__(self, strength, dexterity, constitution, inteligence, wisdom, charisma) -> None:
         self.strength = strength
@@ -15,10 +14,5 @@ class Status():
         self.cha_mod = round((self.charisma - 10)/2)
 
     def __repr__(self) -> str:
-        ret = f"""{line[1:]}    str: +{self.str_mod}({self.strength})
-    dex: +{self.dex_mod}({self.dexterity})
-    con: +{self.con_mod}({self.constitution})
-    int: +{self.int_mod}({self.inteligence})
-    wis: +{self.wis_mod}({self.wisdom})
-    cha: +{self.cha_mod}({self.charisma}){line}"""
+        ret = f"""str: +{self.str_mod}({self.strength})\ndex: +{self.dex_mod}({self.dexterity})\ncon: +{self.con_mod}({self.constitution})\nint: +{self.int_mod}({self.inteligence})\nwis: +{self.wis_mod}({self.wisdom})\ncha: +{self.cha_mod}({self.charisma})"""
         return ret

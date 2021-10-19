@@ -3,12 +3,12 @@ sys.path.append('../')
 from core.coin import Money
 
 class Encounter():
-    def __init__(self, first_idea):
+    def __init__(self, name,first_idea):
         self.first_idea = first_idea
-        self.name = ''
-        self.locaton_type = []
+        self.name = name
+        self.location = []
         self.monsters = {}
-        self.npcs = []
+        self.npcs = {}
         self.plot = ''
         self.rewards = {'money':Money(0,0,0,0,0)}
     
@@ -33,7 +33,7 @@ class Encounter():
 
     ## ! location
     def add_location(self, location):
-        self.locaton = self.locaton + [location]
+        self.location = self.location + [location]
 
     ## ! npcs
     def add_npc(self, npc, text):
@@ -45,9 +45,6 @@ class Encounter():
         exec(ret)
 
     ## ! rewards
-    def set_gp(self, value):
-        self.rewards['gp'] = value
-
     def add_item(self, item):
         self.rewards['common_itens'] = self.rewards['common_itens'] + [item]
 

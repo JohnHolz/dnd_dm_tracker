@@ -1,4 +1,4 @@
-from jh_utils.utils.utils import to_print_list
+from jh_utils.utils.utils import print_dict
 
 class Item():
     """
@@ -8,23 +8,25 @@ class Item():
     def __init__(self, 
                  name,
                  equipment_category,
-                 description = None):
+                 appearence = None):
         self.name = name
         self.equipment_category = equipment_category
-        self.description = []
-        if description!=None:
-            self.add_description(description)
+        self.description = {}
+        if appearence!=None:
+            self.add_description('appearence',appearence)
 
     def __repr__(self):
-        ret = f"""{self.name}
-        {self.equipment_category}
-        {to_print_list(self.description)}
-        """
-        return ret
+        return f"""{self.name}, {self.equipment_category}"""
             
     ##! type/tags
-    def add_description(self, new_description):
-        self.description = self.description + [new_description] 
+    def add_description(self, description_type, description_string):
+        if description_type not in self.description.keys():
+            self.description[description_type] = [description_string]
+        else:
+            self.description[description_type] = self.description[description_type] + [description_string]
+ 
+    def print_description(self):
+        print_dict(self.description)
 
     def get_item_json(self):
         ret = {self.name}

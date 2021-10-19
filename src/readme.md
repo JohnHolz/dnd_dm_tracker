@@ -1,6 +1,6 @@
 # Systems Tree
 
-## Core
+## Small systems
 
 | System Name | System needed | Description                                          |
 | ----------- | ------------- | ---------------------------------------------------- |

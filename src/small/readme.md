@@ -125,3 +125,133 @@ Hability scores as a class to be fast associated with npcs and chars
             "You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword."
          ]
       }
+
+
+### Encounter:
+
+Encounters I want to let as a database of ideas of encounters.
+A class that:
+
+1.  Init the class with simple ideas to been completed as you want.
+2.  Keep the important information of a possible already planned encounter.
+3.  Ease to find the encounter that the DM needs at the moment (finding by location, rewards, enemies).
+
+# Places
+
+| Type   | Contains    | ---             |
+| ------ | ----------- | --------------- |
+| Room   | mobs, items | Small           |
+| Places | npcs        | Contains rooms  |
+| Urban  | ---         | Contains places |
+
+## Types of Places
+
+1. Cities, Town and villages
+   1. general info
+      1. description
+      2. lore
+      3. important npcs
+   2. (↧) SPERMM info
+      1. social
+      2. politic
+      3. economy
+      4. religius
+      5. military
+      6. magical
+   3. intern places
+2. Intern places
+   1. types
+      1. open places
+         1. dungeons
+         2. forts
+         3. cave
+         4. open fields
+         5. planicies
+         6. florest
+         7. swamp
+         8. monuments
+      2. urban intern places
+         1. stores
+         2. taverns
+         3. temples
+         4. squares
+         5. farm
+   2. rooms
+   3. description
+   4. itens inside
+   5. lore
+
+## Characteristics of places:
+
+      ---
+      Selgaunt
+         The sea white fortress
+         city
+         places:
+            port
+            central square
+            castle
+      ---
+
+      hideen info
+         1. basic city info:
+            1. social
+            2. political
+            3. economy
+            4. religious
+            5. military
+            6. magical
+         2. lore
+         3. important npcs
+
+
+      ---
+      Minas Mirabar
+         The suspended minas on the grey Hill
+         city
+         places:
+            port
+            central square
+            castle
+      ---
+
+# Characters/Players:
+
+The char class need just to keep the most important info of our party. So I will just keep what I use in my day by day. But with time maybe I will implement a whole character sheet.
+
+- Passive Perception
+- Magical Itens
+- AC
+- HP
+- Some spells slots
+
+### NPCs
+
+NPC class are to keep important npcs, npcs itens, gold, lore and to create random npcs to us.
+
+---
+
+# Xp System
+
+| Experience Points | Level | Proficiency Bonus |
+| ----------------- | ----- | ----------------- |
+| 0                 | 1     | +2                |
+| 300               | 2     | +2                |
+| 900               | 3     | +2                |
+| 2.700             | 4     | +2                |
+| 6.500             | 5     | +3                |
+| 14.000            | 6     | +3                |
+| 23.000            | 7     | +3                |
+| 34.000            | 8     | +3                |
+| 48.000            | 9     | +4                |
+| 64.000            | 10    | +4                |
+| 85.000            | 11    | +4                |
+| 100.000           | 12    | +4                |
+| 120.000           | 13    | +5                |
+| 140.000           | 14    | +5                |
+| 165.000           | 15    | +5                |
+| 195.000           | 16    | +5                |
+| 225.000           | 17    | +6                |
+| 265.000           | 18    | +6                |
+| 305.000           | 19    | +6                |
+| 355.000           | 20    | +6                |

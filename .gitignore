@@ -3,3 +3,6 @@
 **.
 **__pycache__
 !system**
+**db
+
+**major_plots

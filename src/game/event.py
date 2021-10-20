@@ -1,11 +1,20 @@
 import sys
 sys.path.append('../')
-from jh_utils.utils.utils import to_print_dict
+from jh_utils.utils.utils import print_dict, to_print_dict
 party = 'FULL PARTY'
 Party = 'FULL PARTY'
 party_char_list = [Party]
 
 line = '+----------------------------------------------------+'
+
+def to_print_dict(dic:dict, spaces = 4):
+    """
+    @ make the dict a key: value table string
+    """
+    ret = ''
+    for i in dic:
+        ret = ret + '\n' + f"{i}: {dic[i]}"
+    return ret
 
 class Event():
     def __init__(self, name, time, place, description=''):
@@ -20,7 +29,7 @@ class Event():
         ret = f"""{self.name}
         → {self.place}
         → {self.time}
-        {self.description}"""
+        {to_print_dict(self.description)}"""
         return ret
 
     def add_description(self, description_type, description_string):
@@ -35,9 +44,7 @@ class Event():
         ret['index'] = self.time.__repr__().replace(' ','-')+self.place.__repr__().replace(' ','-')
         ret['time'] = self.time
         ret['place'] = self.place
-        ret['npcs'] = self.npcs
-        ret['info'] = self.info
-        ret['chars'] = self.chars
+        ret['description'] = self.description
         return ret
 
 class Game():
@@ -47,7 +54,7 @@ class Game():
     def __repr__(self):
         ret = f'{line}'
         for i in self.events:
-            ret = ret + f'\n{i}{line}'
+            ret = ret + f'\n{i}\n{line}'
         return ret
 
     def add(self,event):

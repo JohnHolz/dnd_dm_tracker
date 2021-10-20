@@ -1,4 +1,7 @@
 from jh_utils.utils.utils import print_dict
+import sys
+sys.path.append('../')
+from db_interact import read_db, write_db, load_from_db
 
 class Item():
     """
@@ -28,16 +31,32 @@ class Item():
     def print_description(self):
         print_dict(self.description)
 
-    def get_item_json(self):
+    def get_json(self):
         ret = dict()
         ret['name'] = self.name
         ret['equipment_category'] = self.equipment_category
         ret['description'] = self.description
         return ret
 
-def save_item(item):
-    pass
+    def save_item(self,db_path):
+        db = read_db(db_path)
+        db[self.name] = self.get_json()
+        write_db(db,db_path)
 
-def get_item(item_name):
-    "read the db in world and return an item"
-    return item_name
+
+def dict_to_Item(item_dict):
+    item = Item(item_dict['name'],item_dict['equipment_category'])
+    item.description = item_dict['description']
+    return item
+
+def load_item(item_name, db_path):
+    item_dict  = load_from_db(item_name, db_path)
+    return dict_to_Item(item_dict)
+
+def items_table(items_db_path):
+    import pandas as pd
+    db = read_db(items_db_path)
+    item_names = list(db.keys())
+    df = pd.DataFrame(pd.Series(item_names),columns=['Items'])
+    df['equipment_category'] = df['Items'].apply(lambda x: db[x]['equipment_category'])
+    return df

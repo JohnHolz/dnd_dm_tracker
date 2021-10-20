@@ -44,14 +44,14 @@ class Item():
         write_db(db,db_path)
 
 
-def dict_to_Item(item_dict):
+def dict_to_item(item_dict):
     item = Item(item_dict['name'],item_dict['equipment_category'])
     item.description = item_dict['description']
     return item
 
 def load_item(item_name, db_path):
     item_dict  = load_from_db(item_name, db_path)
-    return dict_to_Item(item_dict)
+    return dict_to_item(item_dict)
 
 def items_table(items_db_path):
     import pandas as pd

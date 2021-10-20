@@ -1,10 +1,8 @@
-**.ipynb
 **.ipynb_checkpoints
-**.
 **__pycache__
-!system**
-**db
 
 **major_plots
-**rules
 **world
+creation/*.md
+campaigns/locane
+**db

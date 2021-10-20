@@ -35,6 +35,9 @@ class Item():
         ret['description'] = self.description
         return ret
 
+def save_item(item):
+    pass
+
 def get_item(item_name):
     "read the db in world and return an item"
     return item_name

@@ -28,9 +28,8 @@ Handcode the fewest as possible to track my dnd tables. So I will create a dozen
        4. game -----------------------------> game class and event class
        5. item -----------------------------> item class
        6. npcs -----------------------------> npc class
-       7. place ----------------------------> urban, place and room classes
-       8. small ----------------------------> small systems
-       9. tests ----------------------------> test of all src folder
+       7. small ----------------------------> small systems
+       8. tests ----------------------------> test of all src folder
     4. world
        1. db -------------------------------> folder to save all you create
        2. locane ---------------------------> a continent folder to pre-build objects to fast access

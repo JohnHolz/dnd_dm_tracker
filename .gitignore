@@ -2,7 +2,6 @@
 **__pycache__
 
 **major_plots
-**world
+/world/locane/**
 creation/*.md
 campaigns/locane
-**db

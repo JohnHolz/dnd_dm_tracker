@@ -1,20 +1,12 @@
 import sys
 sys.path.append('../')
 from jh_utils.utils.utils import print_dict, to_print_dict
+from db_interact import read_db, write_db
 party = 'FULL PARTY'
 Party = 'FULL PARTY'
 party_char_list = [Party]
 
 line = '+----------------------------------------------------+'
-
-def to_print_dict(dic:dict, spaces = 4):
-    """
-    @ make the dict a key: value table string
-    """
-    ret = ''
-    for i in dic:
-        ret = ret + '\n' + f"{i}: {dic[i]}"
-    return ret
 
 class Event():
     def __init__(self, name, time, place, description=''):
@@ -49,24 +41,24 @@ class Event():
 
 class Game():
     def __init__(self):
-        self.events = []
+        self.events = {}
     
     def __repr__(self):
         ret = f'{line}'
         for i in self.events:
-            ret = ret + f'\n{i}\n{line}'
+            ret = ret + f'\n{self.events[i]}\n{line}'
         return ret
 
     def add(self,event):
-        self.events.append(event)
+        self.events[event.name] = event
 
-    def save_game(self, cicle_name, relative_path=None):
-        import pandas as pd
-        events_list = list(map(lambda x: x.get_json(), self.events))
-        pd.DataFrame(events_list).to_json(f'{relative_path}events_{cicle_name}.json',orient='records',lines=True)
+    def save_game(self, file_name=None):
+        events_list = {}
+        for i in self.events:
+            events_list[i.name] = i.get_json()
+        write_db(events_list, file_name)
 
 def load_game(file_path):
     ret = Game()
-    event_list = file_path ## TODO read event list function
-    ret.events = event_list
+    ret.events = read_db(file_path)
     return ret

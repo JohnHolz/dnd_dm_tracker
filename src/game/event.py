@@ -1,7 +1,7 @@
 import sys
-sys.path.append('../')
+sys.path.append('../../')
 from jh_utils.utils.utils import print_dict, to_print_dict
-from db_interact import read_db, write_db
+from src.db_interact import read_db, write_db
 party = 'FULL PARTY'
 Party = 'FULL PARTY'
 party_char_list = [Party]
@@ -33,8 +33,8 @@ class Event():
 
     def get_json(self):
         ret = {}
-        ret['index'] = self.time.__repr__().replace(' ','-')+self.place.__repr__().replace(' ','-')
-        ret['time'] = self.time
+        ret['name'] = self.name
+        ret['time'] = self.time.__repr__()
         ret['place'] = self.place
         ret['description'] = self.description
         return ret
@@ -46,19 +46,24 @@ class Game():
     def __repr__(self):
         ret = f'{line}'
         for i in self.events:
-            ret = ret + f'\n{self.events[i]}\n{line}'
+            ret = ret + f'\n{self.events[i]}{line}'
         return ret
 
     def add(self,event):
         self.events[event.name] = event
 
     def save_game(self, file_name=None):
-        events_list = {}
+        db = dict()
         for i in self.events:
-            events_list[i.name] = i.get_json()
-        write_db(events_list, file_name)
+            db[i] = self.events[i].get_json()
+        write_db(db, file_name)
 
 def load_game(file_path):
     ret = Game()
-    ret.events = read_db(file_path)
+    db = read_db(file_path)
+    for i in db:
+        ret.add(Event(db[i]['name'],
+                        db[i]['time'],
+                        db[i]['place'],
+                        db[i]['description']))
     return ret

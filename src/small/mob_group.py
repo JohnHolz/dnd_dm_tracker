@@ -5,7 +5,7 @@ from db_interact import read_db, write_db, load_from_db
 
 
 class Mob_group():
-    def __init__(self, mobs={}, boss=None, cr=0,):
+    def __init__(self, mobs={}, boss=None, cr=0):
         self.mobs = mobs
         self.boss = []
         self.cr = cr
@@ -30,7 +30,7 @@ class Mob_group():
             n = n+len(self.boss)
         if self.mobs != {}:
             for i in self.mobs:
-                n = n + len(self.mobs[i])
+                n = n + self.mobs[i]
         return n
 
     def create_id(self):
@@ -45,10 +45,11 @@ class Mob_group():
         ret['n'] = self.number_of_monsters()
         return ret
 
-    def save_item(self,db_path):
+    def save_group(self,db_path):
         db = read_db(db_path)
-        db[self.create_id] = self.get_json()
-        write_db(db,db_path)
+        group_dict = self.get_json()
+        db[group_dict['id']] = group_dict
+        write_db(db, db_path)
 
 def dict_to_mob_gr(mob_dict):
     mob_gr = Mob_group(mob_dict['mobs'], mob_dict['boss'], mob_dict['cr'])

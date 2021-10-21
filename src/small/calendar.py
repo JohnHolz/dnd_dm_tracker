@@ -44,6 +44,20 @@ class Time():
         self.age = 'te.'
         self.month_day = self.day % 25 + 1
 
+    def get_json(self):
+        ret = dict()
+        ret['year'] = self.year
+        ret['day'] = self.day
+        ret['hour'] = self.hour
+        ret['minute'] = self.minute
+        ret['month_number'] = self.month_number
+        ret['month'] = self.month
+        ret['season'] = self.season
+        ret['age'] = self.age
+        ret['month_day'] = self.month_day
+        ret['full'] = self.__repr__()
+        return ret
+
     def __repr__(self):
         minute = self.minute
         if minute < 10:

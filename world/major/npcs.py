@@ -24,7 +24,3 @@ Tidal = Npc('Tidal') # front major
 Nashin = Npc('nashin')
 Havira = Npc('havira')
 Durr = Npc('durr')
-
-
-
-

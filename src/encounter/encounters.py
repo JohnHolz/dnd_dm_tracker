@@ -1,3 +1,5 @@
+from os import write
+from db_interact import read_db, write_db
 from small.coin import Money
 import sys
 sys.path.append('../')
@@ -54,26 +56,19 @@ class Encounter():
         ret['rewards'] = self.rewards
         return ret
 
+    def save_encounter(self, path):
+        db = read_db(path)
+        db[self.name] = self.get_json()
+        write_db(db, path)
 
-def create_encounter(encounter_name,
-                     location,
-                     monsters,
-                     npcs,
-                     plot,
-                     rewards,
-                     first_idea=''):
-    encounter = Encounter(encounter_name,
-                          first_idea)
-    encounter.add_location(location)
-    encounter.add_mob_group(monsters)
-    encounter.npcs = npcs
-    encounter.rewards = rewards
-    encounter.plot = plot
+
+def get_encounter(encounter_name, path):
+    db = read_db(path)
+    encounter_dict = db[encounter_name]
+    encounter = Npc()
+    encounter.name = encounter_dict['name']
+    encounter.core = encounter_dict['core']
+    encounter.combat = encounter_dict['combat']
+    encounter.drives = encounter_dict['drives']
+    encounter.connections = encounter_dict['connections']
     return encounter
-
-
-def save_encounter(encounter):
-    pass
-
-def load_encounter(encounter_name):
-    pass

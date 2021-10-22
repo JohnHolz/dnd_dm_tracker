@@ -1,13 +1,14 @@
 import sys
 sys.path.append('../')
 
+
 class Core():
     def __init__(self,
-                ocupation=None, 
-                race='human', 
-                languages={'common':'fluent'}, 
-                aligment='N',
-                background='soldier') -> None:
+                 ocupation=None,
+                 race='human',
+                 languages={'common': 'fluent'},
+                 aligment='N',
+                 background='soldier') -> None:
         self.ocupation = ocupation
         self.race = race
         self.languages = languages
@@ -30,3 +31,11 @@ class Core():
         ret['background'] = self.background
         return ret
 
+
+def json_to_core(core_dict):
+    ret = Core(ocupation=core_dict['ocupation'],
+               race=core_dict['race'],
+               languages=core_dict['languages'],
+               aligment=core_dict['aligment'],
+               background=core_dict['background'])
+    return ret

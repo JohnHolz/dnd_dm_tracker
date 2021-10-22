@@ -1,7 +1,11 @@
 from small.coin import Money
+from db_interact import read_db, write_db, load_from_db
+import sys
+sys.path.append('../')
+
 
 class Npc():
-    def __init__(self, name) -> None:
+    def __init__(self, name=None) -> None:
         self.name = name
         self.core = None
         self.combat = None
@@ -30,6 +34,7 @@ class Npc():
 
     def get_json(self):
         ret = dict()
+        ret['name'] = self.name
         ret['core'] = self.core.get_dict()
         ret['combat'] = self.combat.get_dict()
         ret['drives'] = self.drives
@@ -49,10 +54,19 @@ class Npc():
             self.connections[connection_name] = self.connections[connection_name] + \
                 [connection_desc]
 
+    def save_npc(self, path):
+        db = read_db(path)
+        db[self.name] = self.get_json()
+        write_db(path)
 
-def save_npc(npc):
-    pass
 
-
-def get_npc(npc_name):
-    pass
+def get_npc(npc_name, path):
+    db = read_db(path)
+    npc_dict = db[npc_name]
+    npc = Npc()
+    npc.name = npc_dict['name']
+    npc.core = npc_dict['core']
+    npc.combat = npc_dict['combat']
+    npc.drives = npc_dict['drives']
+    npc.connections = npc_dict['connections']
+    return npc

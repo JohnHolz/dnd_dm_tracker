@@ -1,3 +1,6 @@
+from npc.combat import dict_to_combat
+from npc.core import dict_to_core
+from jh_utils.utils.utils import to_print_dict
 from small.coin import Money
 from db_interact import read_db, write_db, load_from_db
 import sys
@@ -11,7 +14,7 @@ class Npc():
         self.combat = None
         self.drives = {
             'legacy': [],
-            'value': [],
+            'values': [],
             'beliefs': [],
         }
         self.items = {
@@ -20,7 +23,7 @@ class Npc():
         self.connections = {}
 
     def __repr__(self) -> str:
-        ret = f'''{self.name}\n{self.core}\n{self.combat}\n{self.drives}\n{self.connections}'''
+        ret = f'''{self.name} - {self.core}\n{self.combat}\n{to_print_dict(self.drives)}\n{to_print_dict(self.connections)}'''
         return ret
 
     def add_core(self, core):
@@ -57,7 +60,7 @@ class Npc():
     def save_npc(self, path):
         db = read_db(path)
         db[self.name] = self.get_json()
-        write_db(path)
+        write_db(db, path)
 
 
 def get_npc(npc_name, path):
@@ -65,8 +68,8 @@ def get_npc(npc_name, path):
     npc_dict = db[npc_name]
     npc = Npc()
     npc.name = npc_dict['name']
-    npc.core = npc_dict['core']
-    npc.combat = npc_dict['combat']
+    npc.core = dict_to_core(npc_dict['core'])
+    npc.combat = dict_to_combat(npc_dict['combat'])
     npc.drives = npc_dict['drives']
     npc.connections = npc_dict['connections']
     return npc

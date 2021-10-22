@@ -1,17 +1,18 @@
-from small.status import Status
+from jh_utils.utils.utils import to_print_dict
+from small.status import Status, dict_to_Status
 import sys
 sys.path.append('../')
 
 
 class Combat():
     def __init__(self,
-                 hp,
+                 hp=0,
                  ca=10,
                  cr=None,
                  speed=30,
                  passive_perception=10,
                  initiative=0,
-                 status=Status(10, 10, 10, 10, 10),
+                 status=Status(),
                  resistences={},
                  senses=None,
                  arcana={},
@@ -37,15 +38,23 @@ class Combat():
 
     def __repr__(self) -> str:
         ret = f'''hp:{self.hp}, ca:{self.ca}, cr:{self.cr}, speed:{self.speed}
-        pass-per:{self.passive_perception}, initiative:{self.initiative}
-        {self.status}
-        resistences: {self.resistences}, {self.senses}
-        weapons: {self.equipment}
-        arcana: {self.arcana}
-        actions: {self.actions}'''
+pass-per:{self.passive_perception}, initiative:{self.initiative}
+#-------------------------------------#
+{self.status}
+#-------------------------------------#
+resistences: 
+{to_print_dict(self.resistences)}, 
+senses: {self.senses}
+#-------------------------------------#
+weapons: 
+{to_print_dict(self.equipment)}#-------------------------------------#
+arcana: 
+{to_print_dict(self.arcana)}#-------------------------------------#
+actions: 
+{to_print_dict(self.actions)}'''
         return ret
 
-    def get_json(self):
+    def get_dict(self):
         ret = dict()
         ret['hp'] = self.hp
         ret['ca'] = self.ca
@@ -53,7 +62,7 @@ class Combat():
         ret['speed'] = self.speed
         ret['passive_perception'] = self.passive_perception
         ret['initiative'] = self.initiative
-        ret['status'] = self.status
+        ret['status'] = self.status.get_dict()
         ret['resistences'] = self.resistences
         ret['senses'] = self.senses
         ret['equipment'] = self.equipment
@@ -74,14 +83,14 @@ class Combat():
             self.actions[info_key] = self.actions[info_key] + [info_desc]
 
 
-def json_to_combat(combat_dict):
+def dict_to_combat(combat_dict):
     ret = Combat(hp=combat_dict['hp'],
                  ca=combat_dict['ca'],
                  cr=combat_dict['cr'],
                  speed=combat_dict['speed'],
                  passive_perception=0,
                  initiative=0,
-                 status=combat_dict['status'],
+                 status=dict_to_Status(combat_dict['status']),
                  resistences=combat_dict['resistences'],
                  armor=combat_dict['armor'],
                  weapons=combat_dict['weapons'],

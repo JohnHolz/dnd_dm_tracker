@@ -1,35 +1,36 @@
 # The other side of Toril
 
 # Sobre o mundo
-1. Curiosidades:
-    - Espiritos da terra, ou espiritos empilhadores de pedras, empilham pedras, mas ninguem jamas viu elas serem empilhadas, eles mostram segredos ou perigos
-    - Necromancia é banido
-3. Lojas Magicas e Black Markets so aceitam Electruns
 
+1. Curiosidades:
+   - Espiritos da terra, ou espiritos empilhadores de pedras, empilham pedras, mas ninguem jamas viu elas serem empilhadas, eles mostram segredos ou perigos
+   - Necromancia é banido
+2. Lojas Magicas e Black Markets so aceitam Electruns
 
 ## Historia
+
 Mundo criado pelos deuses e depois separado, igual em forgotem healms.
 Quase todas raças sao nativas desse mundo, exeto dragonborns, tieflings, aasimares e ginasi, igual em forgoten realms essas raças foram enviadas pra terra e separada de seus deuses e se espalharam pela terra.
 
-Há 900 anos ouve uma guerra que durou 200 anos, a Guerra Arcana, intensa entre elfos e humanos do sul e os anões e golliahs do norte, a guerra deixou consequencias gigantes na terra e na paisagem, e muitos artefatos magicos e magias foram perdidas. 
+Há 900 anos ouve uma guerra que durou 200 anos, a Guerra Arcana, intensa entre elfos e humanos do sul e os anões e golliahs do norte, a guerra deixou consequencias gigantes na terra e na paisagem, e muitos artefatos magicos e magias foram perdidas.
 Os espiritos empilhadores de pedras revelam artefatos arcanos criando templos em meio ao nada, ou apenas empilhando as coisas perto.
 
 Desde então o mundo esta em paz, outras raças ocupam o territorio, anões e elfos não tem preconceitos, muito poucos.
 
-
-# Raças 
+# Raças
 
 ### Anões
+
 - Anões não gostam muito de humanos nem elfos, gostam mais de humanos pois estão mais distribuidos pelo mundo. Gostam de Aasimares, e são normais com tieflings. Não suportam high orcs
 - Anões não sao muito familiares com Warlocks e Sorcerers, mas bem familiarizados com Wizzards, Clerigos e Bardos
 - Anões da montanha - Vivem mais proximos a burr
 - Anões do vale - Vivem mais proximos a mirabar
-- Wood elves vivem na neverend forest, os que vivem em conjunto vivem muito dentro da floresta junto com alguns Satyrs, Kalishar e Firebolgs. 
-- High elves  são conhecidos por seu conhecimento e tem grande posiçao de poder
+- Wood elves vivem na neverend forest, os que vivem em conjunto vivem muito dentro da floresta junto com alguns Satyrs, Kalishar e Firebolgs.
+- High elves são conhecidos por seu conhecimento e tem grande posiçao de poder
 - Dragonborns são de outro plano, mas depois que chegaram se espalharam pelo mundo
 - Humans não gostam mutio de Leonins e o contrario por causa das guerras
 
-# resto/lixo
+
 <!-- Raças principais
 
 Existem no norte
@@ -44,7 +45,7 @@ Existem no norte
 ### Dragonborns
 ### Halfings
 ### Gnomos
-### Tieflings 
+### Tieflings
 ### Orcs ok
 ### High Orcs
 ### Meio Orcs
@@ -53,7 +54,7 @@ Existem no norte
 
 <!-- Raças semianimais
 ### Loxodons
-### Leonin 
+### Leonin
 ### Satyr
 ### Aarakocra
 ### Lizardfolk
@@ -82,7 +83,7 @@ Existem no norte
 <!--
 proibidos
 
-gnomos, genasi, 
+gnomos, genasi,
 -->
 
 # Calendar System
@@ -163,3 +164,15 @@ The age is changed at the end of an important year that ends a important event/e
 | Ogmhar              | N         | Knowledge   | Escolas de magia                                                |
 | Auril               | N         | Ice         | Escolas de magia                                                |
 | Paimon              | LE        | Demons      | Outro plano, Cultos                                             |
+
+# Coin System
+
+Magic Items can only be buy with Electrums.
+
+| Coin     | sim  | cp   | sp   | ep   | gp    | pp     |
+| -------- | ---- | ---- | ---- | ---- | ----- | ------ |
+| Copper   | (cp) | 1    | 1/10 | 1/50 | 1/100 | 1/1000 |
+| Silver   | (sp) | 10   | 1    | 1/5  | 1/10  | 1/100  |
+| Electrum | (ep) | 50   | 5    | 1    | 1/2   | 1/20   |
+| Gold     | (gp) | 100  | 10   | 2    | 1     | 1/10   |
+| Platinum | (pp) | 1000 | 100  | 20   | 10    | 1      |

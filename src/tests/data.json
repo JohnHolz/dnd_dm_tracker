@@ -1,0 +1,44 @@
+{
+  "Barcha": {
+    "name": "Barcha",
+    "core": {
+      "ocupation": "High Major",
+      "race": "Dragonborn",
+      "languages": {
+        "common": "fluent",
+        "draconic": "fluent",
+        "elvish": "fluent",
+        "dwarvish": "Intermediate"
+      },
+      "aligment": "G",
+      "background": "Paladin lvl 19"
+    },
+    "combat": {
+      "hp": 212,
+      "ca": 23,
+      "cr": 25,
+      "speed": 40,
+      "passive_perception": 22,
+      "initiative": 24,
+      "status": {
+        "strength": 20,
+        "dexterity": 18,
+        "constitution": 22,
+        "inteligence": 14,
+        "wisdom": 17,
+        "charisma": 21
+      },
+      "resistences": { "Cold": "Resistent", "Lightning": "Very Resistent" },
+      "senses": ["Darkvision"],
+      "equipment": {
+        "armor": ["Adamantine Breastplate", "Shield"],
+        "weapons": ["Big Sword", "Spear", "Sword"],
+        "items": []
+      },
+      "arcana": { "Paladin": 18 },
+      "actions": { "Magic Ring": "Dispel Magic or CC" }
+    },
+    "drives": { "legacy": [], "value": [], "beliefs": [] },
+    "connections": {}
+  }
+}

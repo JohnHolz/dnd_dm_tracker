@@ -8,6 +8,8 @@ The Circle as they are called are the most powerful Arcane Casters of the World.
 3. Elminster
 4. Tom Bombadile
 5. 
+6. 
+
 
 
 ## Raulothim`s Lair - Magic Inner Plane

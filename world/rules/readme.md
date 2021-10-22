@@ -1,5 +1,22 @@
 # Rules
 
+## Character Creation
+1. Whatever class and race of the books. If is a rare one please tell me to i read a little about
+
+## Lvl up
+2. Every time Roll and re-rolls 1 
+
+## Combat
+1. Sprint take all the turn. Streight line 5 times speed. Heavy armor just 3 times.
+2. Flaking need to be checked. The Player describes the action an how well is described the player throws an saving throw. If passes it can roll with advantage, if not +1.
+3. Half healf point Bloodie.  
+4. Massive damage, CON saving throw.  
+
+## Maybe
+4. Death saving throws rolled behind the screen.   
+5. Help action you need to be more proeficient than the person.
+
+
 I use these rules to help with roleplay and keep the party with the game
 
 | system | how works                                  |

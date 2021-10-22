@@ -6,7 +6,7 @@ sys.path.append('../')
 
 
 class Encounter():
-    def __init__(self, name):
+    def __init__(self, name=None):
         self.name = name
         self.location = []
         self.plot = ''
@@ -65,7 +65,7 @@ class Encounter():
 def get_encounter(encounter_name, path):
     db = read_db(path)
     encounter_dict = db[encounter_name]
-    encounter = Npc()
+    encounter = Encounter()
     encounter.name = encounter_dict['name']
     encounter.core = encounter_dict['core']
     encounter.combat = encounter_dict['combat']

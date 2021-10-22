@@ -41,15 +41,15 @@ Handcode the fewest as possible to track my dnd tables. So I will create a dozen
 
 Creating my classes and functions with the 1.0 Tracker I want to use just jupyter notebooks for running the code to help me out during the sessions and a database for homebrew itens and npcs.
 
-| To finish   | needed | ok     |
-| ----------- | ------ | ------ |
-| encounter   | class  | almost |
-| encounter   | save   | --     |
-| encounter   | read   | --     |
-| npc         | --     | ok     |
-| game/events | --     | ok     |
-| item        | --     | ok     |
-| mob_group   | --     | ok     |
+| To finish       | needed | ok  |
+| --------------- | ------ | --- |
+| creation nb     | create | --  |
+| campaign arch 2 | made   | --  |
+| encounter       | --     | ok  |
+| npc             | --     | ok  |
+| game/events     | --     | ok  |
+| item            | --     | ok  |
+| mob_group       | --     | ok  |
 
 ## Game Example
 

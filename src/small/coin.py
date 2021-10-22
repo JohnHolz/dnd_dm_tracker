@@ -37,6 +37,9 @@ class Money():
     def update_money(self, value, coin='gp'):
         exec(f'self.{coin} = self.{coin}+{value}')
 
+    def get_list(self):
+        return [self.cp, self.sp, self.ep, self.gp, self.pp]
+
 transformation_matrix = {
     'cp': [1    , 1/10, 1/50 , 1/100 , 1/1000],
     'sp': [10   , 1   , 1/5  ,  1/10 ,  1/100],
@@ -55,3 +58,7 @@ coin_index = {
 
 def exchange_coin(value, coin_from='sp', coin_to='gp'):
     return transformation_matrix[coin_from][coin_index[coin_to]]*value
+
+def list_to_money(coin_ls):
+    money = Money(coin_ls[0],coin_ls[1],coin_ls[2],coin_ls[3],coin_ls[4])
+    return money

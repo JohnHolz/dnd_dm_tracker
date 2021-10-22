@@ -1,6 +1,6 @@
-from os import write
 from db_interact import read_db, write_db
-from small.coin import Money
+from jh_utils.utils.utils import to_print_dict, to_print_list
+from small.coin import Money, list_to_money
 import sys
 sys.path.append('../')
 
@@ -16,7 +16,7 @@ class Encounter():
                         'magical_items': []}
 
     def __repr__(self):
-        ret = f'''{self.name} - {self.location} \n{self.rewards} \n{self.plot}'''
+        ret = f'''{self.name} - {self.location}\n{to_print_dict(self.rewards)} \n{self.plot}'''
         return ret
 
     # ! location
@@ -31,20 +31,22 @@ class Encounter():
         self.rewards['common_itens'] = self.rewards['common_itens'] + [item]
 
     def add_magical_item(self, magical_item):
-        self.rewards['magical_items'] = self.rewards['magical_items'] + \
-            [magical_item]
+        self.rewards['magical_items'] = self.rewards['magical_items'] + [magical_item]
 
     # ! add information
-    def add_info(self, description_type, description_string):
-        if description_type not in self.description.keys():
-            self.description[description_type] = [description_string]
-        else:
-            self.description[description_type] = self.description[description_type] + \
-                [description_string]
+    def add_info(self, key, value):
+        self.description[key] = value
 
     # ! set plot
     def set_plot(self, new_plot):
         self.plot = self.name + f'\n{new_plot}'
+
+    def reward_json(self):
+        ret = dict()
+        for i in self.rewards:
+            ret[i] = self.rewards[i]
+        ret['money']=self.rewards['money'].get_list()
+        return ret
 
     # ! save
     def get_json(self):
@@ -53,7 +55,7 @@ class Encounter():
         ret['location'] = self.location
         ret['plot'] = self.plot
         ret['description'] = self.description
-        ret['rewards'] = self.rewards
+        ret['rewards'] = self.reward_json()
         return ret
 
     def save_encounter(self, path):
@@ -67,8 +69,9 @@ def get_encounter(encounter_name, path):
     encounter_dict = db[encounter_name]
     encounter = Encounter()
     encounter.name = encounter_dict['name']
-    encounter.core = encounter_dict['core']
-    encounter.combat = encounter_dict['combat']
-    encounter.drives = encounter_dict['drives']
-    encounter.connections = encounter_dict['connections']
+    encounter.location = encounter_dict['location']
+    encounter.plot = encounter_dict['plot']
+    encounter.description = encounter_dict['description']
+    encounter.rewards = encounter_dict['rewards']
+    encounter.rewards['money'] = list_to_money(encounter.rewards['money'])
     return encounter

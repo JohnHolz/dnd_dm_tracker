@@ -12,8 +12,25 @@ The Circle as they are called are the most powerful Arcane Casters of the World.
 
 
 
-## Raulothim`s Lair - Magic Inner Plane
+## The Cicle Inner Plane - Tchazzar Inner Plane - Raulothim`s Lair
 
+#### Appearence
+Ceu é amarelo dourado escuro
+Caminhos muito bem definidos
+Pintas nas arvores brilham forte
+Cogumelos do tamanho de dragoes
+Arvores menores que os cogumelos porem ainda maiores que as tradicionais, e dos formatos mais diferentes possiveis
+embaixo desses cogumelos gigantescos vivem animais de mais diversos tipos
+    1. vespas do tamanho de cachorros
+    2. aranhas gigantes
+    3. kobolds minusculos como formigas fazendo ninhos gigantescos
+    4. aguias como as do senhor dos aneis no alto das arvores
+
+Chegando em raulothim vemos algumas casas - vemos que existem alguns magos.
+vemos que tem 4 magos habitando o lugar, porem vemos 8/9 casas simpaticas
+
+
+#### Creation
 Raulothim and Larendrammagar, both strong dragon arcane casters, created an Inner Place with the Tcazzar, another strong dragon caster, quasi-deitie permition.  
 Tchazzar been a quasi-deitie let him start his own Astral Plane. 
 So with Tchazzar permission, Raulothim and Larendrammagar created an inner place for him, using they own powers, and some let by Mystra and Tchazzar goddess powers.   

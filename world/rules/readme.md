@@ -1,37 +1,29 @@
 # Rules
 
+1. Character Creation
+2. Lvl up
+3. Combat
+4. Travel
+5. Random
+
 ## Character Creation
+
 1. Whatever class and race of the books. If is a rare one please tell me to i read a little about
+2. Fishs is off.
+3. Homebrew I need to see or please adapt to a stats from one book
 
 ## Lvl up
-2. Every time Roll and re-rolls 1 
+
+1. Hp need to be roll, re-roll 1.
 
 ## Combat
+
 1. Sprint take all the turn. Streight line 5 times speed. Heavy armor just 3 times.
-2. Flaking need to be checked. The Player describes the action an how well is described the player throws an saving throw. If passes it can roll with advantage, if not +1.
-3. Half healf point Bloodie.  
-4. Massive damage, CON saving throw.  
+2. Flaking ataque need to be checked. The Player describes the action an how well is described the player throws an saving throw. If passes it can roll with advantage, if not +1.
+3. Half healf i say that the mob is Bloodie.
+4. Massive damage, CON saving throw - or stuned of inconcient...
 
-## Maybe
-4. Death saving throws rolled behind the screen.   
-5. Help action you need to be more proeficient than the person.
-
-
-I use these rules to help with roleplay and keep the party with the game
-
-| system | how works                                  |
-| ------ | ------------------------------------------ |
-| AC     | what happens when the hit miss             |
-| Travel | rolls an dice every time the party travels |
-
-
----
-
-<br>
-
-ps:'A deaf bard has a 20% chance to fail when attempting to use a bardic performance'
-
-# Role Play AC:
+### Role Play AC:
 
 | AC               | AC value                          | block type       |
 | ---------------- | --------------------------------- | ---------------- |
@@ -60,7 +52,7 @@ ps:'A deaf bard has a 20% chance to fail when attempting to use a bardic perform
    2. armor 14
    3. shield +2
 
-# Travelling
+## Travelling
 
 Every time travelling someone rolls an dice. I set a list of random encounters
 
@@ -74,8 +66,8 @@ Every time travelling someone rolls an dice. I set a list of random encounters
 | 6          | break an item                   |
 | 7          | nothing happens                 |
 | 8          | nothing happens                 |
-| 9          | nothing happens                 |
-| 10         | nothing happens                 |
+| 9          | got lost                        |
+| 10         | got lost                        |
 | 11         | nothing happens                 |
 | 12         | nothing happens                 |
 | 13         | nothing happens                 |
@@ -86,3 +78,8 @@ Every time travelling someone rolls an dice. I set a list of random encounters
 | 18         | find some traveler              |
 | 19         | find some traveler              |
 | 20         | find a random magic ring        |
+
+## Random
+
+1. A deaf bard has a 20% chance to fail when attempting to use a bardic performance
+2. Help action you need to be more proeficient than the person.

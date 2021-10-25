@@ -5,11 +5,11 @@ from db_interact import read_db, write_db, load_from_db
 
 
 class Mob_group():
-    def __init__(self, mobs={}, boss=None, cr=0):
+    def __init__(self, mobs={}, boss=[], cr=0):
         self.mobs = mobs
         self.boss = []
         self.cr = cr
-        if boss != None:
+        if boss != []:
             if type(boss) == str:
                 boss = [boss]
             self.boss = self.boss + boss
@@ -34,7 +34,9 @@ class Mob_group():
         return n
 
     def create_id(self):
-        return f'{self.cr}-{self.boss[0]}'
+        mob0 = list(self.mobs.keys())[0]
+        boss_var = f'{mob0}' if self.boss == [] else f'-{self.boss[0]}'
+        return f'{self.cr}{boss_var}'
 
     def get_json(self):
         ret = dict()

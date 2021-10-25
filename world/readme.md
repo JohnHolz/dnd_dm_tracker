@@ -1,91 +1,5 @@
 # The other side of Toril
 
-# Sobre o mundo
-
-1. Curiosidades:
-   - Espiritos da terra, ou espiritos empilhadores de pedras, empilham pedras, mas ninguem jamas viu elas serem empilhadas, eles mostram segredos ou perigos
-   - Necromancia é banido
-2. Lojas Magicas e Black Markets so aceitam Electruns
-
-## Historia
-
-Mundo criado pelos deuses e depois separado, igual em forgotem healms.
-Quase todas raças sao nativas desse mundo, exeto dragonborns, tieflings, aasimares e ginasi, igual em forgoten realms essas raças foram enviadas pra terra e separada de seus deuses e se espalharam pela terra.
-
-Há 900 anos ouve uma guerra que durou 200 anos, a Guerra Arcana, intensa entre elfos e humanos do sul e os anões e golliahs do norte, a guerra deixou consequencias gigantes na terra e na paisagem, e muitos artefatos magicos e magias foram perdidas.
-Os espiritos empilhadores de pedras revelam artefatos arcanos criando templos em meio ao nada, ou apenas empilhando as coisas perto.
-
-Desde então o mundo esta em paz, outras raças ocupam o territorio, anões e elfos não tem preconceitos, muito poucos.
-
-# Raças
-
-### Anões
-
-- Anões não gostam muito de humanos nem elfos, gostam mais de humanos pois estão mais distribuidos pelo mundo. Gostam de Aasimares, e são normais com tieflings. Não suportam high orcs
-- Anões não sao muito familiares com Warlocks e Sorcerers, mas bem familiarizados com Wizzards, Clerigos e Bardos
-- Anões da montanha - Vivem mais proximos a burr
-- Anões do vale - Vivem mais proximos a mirabar
-- Wood elves vivem na neverend forest, os que vivem em conjunto vivem muito dentro da floresta junto com alguns Satyrs, Kalishar e Firebolgs.
-- High elves são conhecidos por seu conhecimento e tem grande posiçao de poder
-- Dragonborns são de outro plano, mas depois que chegaram se espalharam pelo mundo
-- Humans não gostam mutio de Leonins e o contrario por causa das guerras
-
-
-<!-- Raças principais
-
-Existem no norte
-### Anões da montanha
-### Anões do vale
-### Meio Wood Elf
-### Meio High Elf
-### High Elfs
-### Wood Elfs
-### Dark Elfs(Drow)
-### Humans
-### Dragonborns
-### Halfings
-### Gnomos
-### Tieflings
-### Orcs ok
-### High Orcs
-### Meio Orcs
-### Kalashtar
--->
-
-<!-- Raças semianimais
-### Loxodons
-### Leonin
-### Satyr
-### Aarakocra
-### Lizardfolk
-
-### Minotauros
-### Tabaxi
-### Centaur
-### Tortle
--->
-
-<!-- diferentes
-### Goliath
-### Aasimar
-### Firebolg
--->
-
-<!-- normais
-### Goblins
-### Hobgoblins
-### Kobolds
-### Bugbear
-### Kenku
-### Orcs
--->
-
-<!--
-proibidos
-
-gnomos, genasi,
--->
-
 # Calendar System
 
 I created a new age system because after and before Christ doest apply to Dnd. So year will have 400 days, divided in 4 seasons.
@@ -176,3 +90,88 @@ Magic Items can only be buy with Electrums.
 | Electrum | (ep) | 50   | 5    | 1    | 1/2   | 1/20   |
 | Gold     | (gp) | 100  | 10   | 2    | 1     | 1/10   |
 | Platinum | (pp) | 1000 | 100  | 20   | 10    | 1      |
+
+# Sobre o mundo
+
+1. Curiosidades:
+   - Espiritos da terra, ou espiritos empilhadores de pedras, empilham pedras, mas ninguem jamas viu elas serem empilhadas, eles mostram segredos ou perigos
+   - Necromancia é banido
+2. Lojas Magicas e Black Markets so aceitam Electruns
+
+## Historia
+
+Mundo criado pelos deuses e depois separado, igual em forgotem healms.
+Quase todas raças sao nativas desse mundo, exeto dragonborns, tieflings, aasimares e ginasi, igual em forgoten realms essas raças foram enviadas pra terra e separada de seus deuses e se espalharam pela terra.
+
+Há 900 anos ouve uma guerra que durou 200 anos, a Guerra Arcana, intensa entre elfos e humanos do sul e os anões e golliahs do norte, a guerra deixou consequencias gigantes na terra e na paisagem, e muitos artefatos magicos e magias foram perdidas.
+Os espiritos empilhadores de pedras revelam artefatos arcanos criando templos em meio ao nada, ou apenas empilhando as coisas perto.
+
+Desde então o mundo esta em paz, outras raças ocupam o territorio, anões e elfos não tem preconceitos, muito poucos.
+
+# Raças
+
+### Anões
+
+- Anões não gostam muito de humanos nem elfos, gostam mais de humanos pois estão mais distribuidos pelo mundo. Gostam de Aasimares, e são normais com tieflings. Não suportam high orcs
+- Anões não sao muito familiares com Warlocks e Sorcerers, mas bem familiarizados com Wizzards, Clerigos e Bardos
+- Anões da montanha - Vivem mais proximos a burr
+- Anões do vale - Vivem mais proximos a mirabar
+- Wood elves vivem na neverend forest, os que vivem em conjunto vivem muito dentro da floresta junto com alguns Satyrs, Kalishar e Firebolgs.
+- High elves são conhecidos por seu conhecimento e tem grande posiçao de poder
+- Dragonborns são de outro plano, mas depois que chegaram se espalharam pelo mundo
+- Humans não gostam mutio de Leonins e o contrario por causa das guerras
+
+<!-- Raças principais
+
+Existem no norte
+### Anões da montanha
+### Anões do vale
+### Meio Wood Elf
+### Meio High Elf
+### High Elfs
+### Wood Elfs
+### Dark Elfs(Drow)
+### Humans
+### Dragonborns
+### Halfings
+### Gnomos
+### Tieflings
+### Orcs ok
+### High Orcs
+### Meio Orcs
+### Kalashtar
+-->
+
+<!-- Raças semianimais
+### Loxodons
+### Leonin
+### Satyr
+### Aarakocra
+### Lizardfolk
+
+### Minotauros
+### Tabaxi
+### Centaur
+### Tortle
+-->
+
+<!-- diferentes
+### Goliath
+### Aasimar
+### Firebolg
+-->
+
+<!-- normais
+### Goblins
+### Hobgoblins
+### Kobolds
+### Bugbear
+### Kenku
+### Orcs
+-->
+
+<!--
+proibidos
+
+gnomos, genasi,
+-->

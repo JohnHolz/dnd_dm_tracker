@@ -15,6 +15,7 @@ Grupos e cultos:
 Lugares:
 1. Djerad Thymar
 
+Acontecimentos:
 
 Random: 
 1. Todas cores e tipos de dragões, dragonborns, abyshais and other dragoncreatures.... 

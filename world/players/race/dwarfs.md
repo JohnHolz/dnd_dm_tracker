@@ -10,6 +10,7 @@ Lugares:
 1. Conhecem bem as montanhas de muradim
 2. Sabem sobre as cidades abandonadas sob as montanhas
 
+Acontecimentos:
 
 Random:
 3. Sabem sobre os duegar nas cidades abandonadas sob as montanhas

@@ -15,6 +15,8 @@ Lugares:
 2. Templos da lua
 3. Lago da neverend forest
 
+Acontecimentos:
+
 Random:
 
 1. Odeiam anões, principalmente os da montanha.

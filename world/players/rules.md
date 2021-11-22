@@ -72,3 +72,10 @@
 1. Whatever class and race of the books. If is a rare one please tell me to i read a little about
 2. Fishs is off.
 3. Homebrew I need to see or please adapt to a stats from one book
+1. Rolar os dados
+   1. 5x roll3 tira o menor, max 16
+   2. 6stat = 72 - (toma dos outros)
+2. 4 skill proeficiencies - independente de background e classe, fazendo sentido pra ideia de personagem ta valendo
+3. INT, deixar inteligencia mais importante no jogo, o player poder escolher N profeficiencias a mais igual ao modificador de INT
+4. 2 tool proficiencies or 2 languages
+5. Starting gold - 150g

@@ -32,10 +32,8 @@ Handcode the fewest as possible to track my dnd tables. So I will create a dozen
        8. tests ----------------------------> test of all src folder
     4. world
        1. db -------------------------------> folder to save all you create
-       2. locane ---------------------------> a continent folder to pre-build objects to fast access
-       3. lossenue -------------------------> a continent folder to pre-build objects to fast access
-       4. rules ----------------------------> my roleplay rules accessile
-       5. utils.py -------------------------> util objects
+       2. dm -------------------------------> dm plots, encounters and things like that
+       3. players --------------------------> open information for the players
 
 # 1.0.0
 

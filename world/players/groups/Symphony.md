@@ -1,3 +1,9 @@
 # Symphony
 
-Bards
+Bards guild.
+
+#### Get in: 
+Troving city
+
+
+

@@ -2,7 +2,8 @@
 
 Pessoas:
 
-
+1. Erthrandir, o diretor de eldrich arcana
+2. Rudgar, o diretor de drannor arcana
 
 Grupos e cultos:
 
@@ -12,8 +13,9 @@ Grupos e cultos:
 Lugares:
 
 1. Conhecem bem a neverend forest
-2. Templos da lua
-3. Lago da neverend forest
+2. Lago da neverend forest
+3. O grande templo da lua
+4. Templos da lua em Eriane
 
 Acontecimentos:
 

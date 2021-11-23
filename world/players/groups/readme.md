@@ -11,3 +11,10 @@ Teams that everyone knows that exists:
 5. The Bards Symphony
 6. Tiamat cult
 8. Platinum Cadre
+
+
+Nome:
+   Descrição:
+   Historias de crianças:
+   Historias Contadas sobre:
+   Lendas:

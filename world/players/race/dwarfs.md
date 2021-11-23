@@ -2,7 +2,8 @@
 
 Pessoas:
 1. Cavebreakers - Sobrenome forte
-2. Rudgar Cavebreakers, diretor da escola de magia
+2. Erthrandir, o diretor de eldrich arcana
+3. Rudgar Cavebreaker, o diretor de drannor arcana
 
 Grupos e cultos:
 

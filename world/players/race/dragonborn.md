@@ -17,6 +17,8 @@ Lugares:
 
 Acontecimentos:
 
+
+
 Random: 
 1. Todas cores e tipos de dragões, dragonborns, abyshais and other dragoncreatures.... 
-2. Lendas quando criança sobre Nuvuereen, the dark lady and shadow dragon.
+2. Lendas quando criança sobre Tiamat e Bahamuts, deudes dragoes, Nuvuereen, the dark lady and shadow dragon, tchazzar, o dragão vermelho que controla uma região inteira de faerum.

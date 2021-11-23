@@ -2,7 +2,6 @@
 
 Pessoas:
 
-
 Grupos e cultos:
 
 Lugares:

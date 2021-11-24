@@ -21,42 +21,16 @@ Handcode the fewest as possible to track my dnd tables. So I will create a dozen
        1. encounter-creation.ipynb ---------> encounter creation and save in world db
        2. npc-creation.ipynb ---------------> npc creation and save in word db
        3. mob-group-creation.ipynb ---------> balance encounters
+       4. notebooks ... 
     3. src
-       1. characters -----------------------> char class
-       2. dnd5eapi -------------------------> bunch of api get requests built
-       3. encounter ------------------------> encounter class
-       4. game -----------------------------> game class and event class
-       5. item -----------------------------> item class
-       6. npcs -----------------------------> npc class
-       7. small ----------------------------> small systems
-       8. tests ----------------------------> test of all src folder
+       1. dnd5eapi -------------------------> bunch of api get requests built
+       2. encounter ------------------------> encounter class
+       3. game -----------------------------> game class and event class
+       4. item -----------------------------> item class
+       5. npcs -----------------------------> npc class
+       6. small ----------------------------> small systems
+       7. tests ----------------------------> test of all src folder
     4. world
        1. db -------------------------------> folder to save all you create
        2. dm -------------------------------> dm plots, encounters and things like that
        3. players --------------------------> open information for the players
-
-# 1.0.0
-
-Creating my classes and functions with the 1.0 Tracker I want to use just jupyter notebooks for running the code to help me out during the sessions and a database for homebrew itens and npcs.
-
-| To finish       | needed | ok  |
-| --------------- | ------ | --- |
-| creation nb     | create | --  |
-| campaign arch 2 | made   | --  |
-| encounter       | --     | ok  |
-| npc             | --     | ok  |
-| game/events     | --     | ok  |
-| item            | --     | ok  |
-| mob_group       | --     | ok  |
-
-## Game Example
-
-### Game Notebook
-
-### Possible Encounters Notebook
-
-### Creation notebook
-
-# 2.0.0
-
-Maybe someday i will do a website but the focus is to create some notebooks and a database to keep track of my dnd tables.

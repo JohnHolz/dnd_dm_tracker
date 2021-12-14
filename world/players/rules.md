@@ -18,6 +18,7 @@
 
 1. A deaf bard has a 20% chance to fail when attempting to use a bardic performance
 2. Help action you need to be more proeficient than the person.
+3. fly - dc10 stop falling and stop inplace 
 
 ## Combat
 
@@ -60,8 +61,7 @@
 ## Lvl up
 
 1. Hp need to be roll, re-roll 1.
-2. Lvl up in long rest
-3. | lvl | status    |
+2. | lvl | status    |
    | --- | --------- |
    | 8   | +2 + feat |
    | 10  | +1        |

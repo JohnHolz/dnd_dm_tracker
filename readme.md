@@ -1,36 +1,14 @@
-# Dnd game tracker
+# a Dnd World
 
-As a GM i need to keep track of a lot of ideas, encounters, events, rounds, party stats, itens, npcs...
+I was making code to help me track the campaign with jupyter notebooks in just one screen. But in presence I dont need anymore.   Know is just a world that anybody can use and where I write ideas
 
-## Objective
-
-Handcode the fewest as possible to track my dnd tables. So I will create a dozen of classes and use [Dnd5eapi](https://www.dnd5eapi.co/) to get the rest.
-
-# Folder Structure
-
-    1. campaigns:
-       1. campaign_name --------------------> campaign been or finished run
-       2. campaign_name_2 ------------------> campaign been or finished run
-       3. default_folder -------------------> folder to copy and paste and start campaign
-           1. db ---------------------------> save the events of the campaign
-           2. current-place.ipynb ----------> fast information of the party and npcs
-           3. events.ipynb -----------------> declaring events
-           4. major-plots.ipynb ------------> major plot notes
-           5. random-encounters.ipynb ------> random encounters / happenings
-    2. creation:
-       1. encounter-creation.ipynb ---------> encounter creation and save in world db
-       2. npc-creation.ipynb ---------------> npc creation and save in word db
-       3. mob-group-creation.ipynb ---------> balance encounters
-       4. notebooks ... 
-    3. src
-       1. dnd5eapi -------------------------> bunch of api get requests built
-       2. encounter ------------------------> encounter class
-       3. game -----------------------------> game class and event class
-       4. item -----------------------------> item class
-       5. npcs -----------------------------> npc class
-       6. small ----------------------------> small systems
-       7. tests ----------------------------> test of all src folder
-    4. world
-       1. db -------------------------------> folder to save all you create
-       2. dm -------------------------------> dm plots, encounters and things like that
-       3. players --------------------------> open information for the players
+    1. dm:
+       1. groups ---------------------------> facções/grupos/cultos e guildas presentes no mundo
+       2. locane ---------------------------> lugares e seus npcs
+       3. lossenue -------------------------> lugares e seus npcs
+       4. sword_coast ----------------------> preparação extra dos modulos
+    2. players:
+       1. class ----------------------------> informação que cada classe sabe sobre o mundo
+       2. groups ---------------------------> informação aberta para os players sobre grupos
+       3. locane ---------------------------> informação aberta para os players sobre locais
+       4. race -----------------------------> coisas que cada raça sabe do mundo

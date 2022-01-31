@@ -79,3 +79,6 @@
 3. INT, deixar inteligencia mais importante no jogo, o player poder escolher N profeficiencias a mais igual ao modificador de INT
 4. 2 tool proficiencies or 2 languages
 5. Starting gold - 150g
+
+## Death Saves
+The Death save just go to 0 when the pc rest

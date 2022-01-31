@@ -3,6 +3,8 @@
 Locane is a beautiful nation made predominantly from Human, Woodelfs, Montain Dwarfs, Halflings, Dragonborns. 
 The wood elfs live in the south, living in and near the Neverend Forest, the dwarfs in the north, living in the Muradin Montains, humans are the predominant, living more in the big cities.
 
+![Locane](Locane.jpg)
+
 ## Raças
 1. Todos sabem que anões não se dão muito bem com elfos, principalmente os anões da montanha com os elfos da floresta. Por causa das antigas guerras entre eles, norte x sul. Inclusive existem 2 escolas de magia em Locane, uma mais ao norte e uma mais ao sul.
 2. High elfs são mal vistos como os burgueses de locane. Pois a maioria foi embora para Lossenue na guerra e ficaram apenas a Elite, por isso muitos são 
